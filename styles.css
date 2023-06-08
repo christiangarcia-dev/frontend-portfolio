@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+
+/* NAVBAR */ 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 1368px;
+    height: 150px;
+    align-items: center; 
+    padding: 0 20px; /* add padding on the sides of the navbar */
+}
+
+#logo img {
+    width:auto;
+    height: 150;
+    transform: scale(1.8);
+}
+
+#navigation {
+    display: flex;
+    gap: 13px; /* adds space between the h3 items */
+}
+
+#navigation h3 a {
+    text-decoration: none; /* removes underline from links */
+    font-weight: 20;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+#contact-nav {
+    color: #00A0C3;
+    border: solid #00A0C3 2px;
+    border-radius: 30px;
+}
+
+#projects-nav {
+    color: #000
+}
+
+
+/* INITIAL AREA */ 
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0px;
+}
+
+.welcome-section hr {
+    width: 396px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.welcome-section h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.welcome-section h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 230;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 38vh;
+}
+
+header h2 {
+    margin-bottom: 40px;
+}
+
+header img {
+    width: 260px;
+    height: auto;
+}
+
+/* MY DESCRIPTION */ 
+.personal-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 1100px;
+    background: linear-gradient(to top, #00A0C3, #007090);
+
+    padding: 0px 207px;
+    text-align: center;
+    margin-top: 185px;
+}
+
+.personal-description h2 {
+    padding-top: 153px;
+    color: #fff;
+    font-size: 40px;
+}
+
+.personal-description p {
+    padding-top: 38px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 10;
+    line-height: 200%;
+}
+
+.personal-description hr {
+    width: 546px;
+    margin-top: 82px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.description-skills-section {
+    position: relative; /* makes the skills-container position relative to this container */
+    padding-bottom: 0px; /* creates space at the bottom of personal-description for skills-container */
+}
+
+
+/* SKILLS */ 
+.skills-container {
+    position: relative;
+    top: -380px; /* Adjust this value to shift the boxes up */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.frontend-box,
+.uiux-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers the child elements horizontally */
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    padding: 20px; /* gives some space around the content inside the boxes */
+    margin: 0; /* gives some space between the boxes */
+    width: 507px; /* set box width */
+    height: 1015px; /* set box height */
+    text-align: center; /* center the text */
+    background-color: #FFF;
+    line-height: 30px;
+    
+}
+
+.frontend-box {
+    border-radius: 14px 0px 0px 14px;
+    border-right-width: -0.1em;
+    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.uiux-box {
+    border-radius: 0px 14px 14px 0px;
+    border-left-width: 0em;
+    box-shadow: 0px 1.4px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.frontend-box img,
+.uiux-box img {
+    width: 100px; /* adjust as per your requirements */
+    height: auto;
+    padding-top: 39px;
+    padding-bottom: 50px;
+}
+
+.frontend-box hr,
+.uiux-box hr {
+    border-color: black 1px; /* change color of horizontal lines */
+    width: 225px;
+    margin-bottom: 60px;
+}
+
+.frontend-box hr {
+    margin-top: 94px; 
+}
+
+.uiux-box hr {
+    margin-top: 34px;
+}
+
+.frontend-box ul,
+.uiux-box ul {
+    list-style-type: none; /* remove bullet points */
+    padding: 0; /* remove padding */
+    line-height: 36px;
+}
+
+.frontend-box h4, 
+.uiux-box h4 {
+    color:#00A0C3; 
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.frontend-box h3, 
+.uiux-box h3 {
+    padding-bottom: 24px;
+}
+
+.frontend-box p, 
+.uiux-box p {
+    padding: 0px 50px;
+}
+
+
+/* PROJECTS */ 
+.projects-container h2, 
+.projects-container p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 207px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.projects-container h2 {
+    font-size: 34px;
+}
+
+.projects-container p {
+    margin-bottom: 60px;
+}
+
+.swiper {
+    width: 960px;
+    height: 480px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+  }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.swiper-button-next {
+    color: #007090;
+}
+
+.swiper-button-prev {
+    color: #007090;
+}
+
+
+/* CONTACT */ 
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 650px;
+    background: linear-gradient(to top, #00A0C3, #007090);
+
+    padding: 0px 207px;
+    text-align: center;
+    margin-top: 185px;
+}
+
+.contact-section h2 {
+    padding-top: 153px;
+    color: #fff;
+    font-size: 40px;
+}
+
+.contact-section p {
+    padding-top: 38px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 10;
+    line-height: 200%;
+}
+
+.contact-section hr {
+    width: 546px;
+    margin-top: 82px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section input, textarea {
+    margin: 10px;
+    width: 50%;
+    padding: 10px;
+}
+
+.contact-section button {
+    margin-top: 20px;
+    width: 20%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #007090;
+    color: #fff;
+}
+

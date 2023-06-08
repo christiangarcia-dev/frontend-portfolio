@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Christian Garcia - Portfolio</title>
 </head>
-
 <body>
-
-    <nav id="navbar">
-        <span id="logo"><img src="res/logo-blue-background.png" alt="logo" style="width: 90px"; height="auto"></span>
-        <h3> <a href="projects-button"></a>Projects</h3>
-        <h3> <a href="chat-form-button"></a>Let's chat</h3>
-    </nav>
+    <nav class="navbar">
+        <div id="logo"><img src="res/logo-blue-background.png" alt="logo" style="width: 90px"; height="auto"></div>
+        <div id="navigation">
+            <h3> <a id="projects-nav" href="#projects-section">Projects</a></h3>
+            <h3> <a id="contact-nav" href="#chat-form">Let's chat</a></h3>
+        </div>
+    </nav>    
 
     <header class="welcome-section">
-        <h1>Front-End Developer | UI/UX Designer</h1>
         <hr> <!-- horizontal line -->
-        <img src="res/pfp.png" alt="pfp">
+        <div></div>
+        <h1 class="title is-1">Front-End Developer | UI/UX Designer</h1>
+        <br>
         <h2>I design and build user interfaces, welcome!</h2>
+        <img src="res/pfp.png" alt="pfp">
     </header>
 
     <section class="description-skills-section">
@@ -33,6 +42,7 @@
                 intuitive user interfaces. Beyond the world of technology, I maintain a strong 
                 passion for health and wellness. This interest drives my motivation to create 
                 products that make a tangible difference in people's lives.</p>
+                <hr> <!-- horizontal line -->
         </div>
 
         <div class="skills-container">
@@ -87,6 +97,7 @@
     <section class="projects-section">
         <div class="projects-container">
             <h2>My Projects</h2>
+            <br>
             <p>Being a recent graduate at 22, my experience has predominantly been in the realm of back-end development. 
             Consequently, the projects you'll see here are not predominantly web-based. All the knowledge and skills I've 
             gained in web development have been self-taught and honed during my personal time. Despite this, I'm now at 
@@ -94,32 +105,71 @@
             projects, they encapsulate essential design principles, software tools, and programming languages vital to the 
             field. The very website you're navigating is a testament to my front-end ability, having been crafted from scratch, 
             exemplifying the knowledge I've accrued in both front-end development and design.</p>
+            <br> 
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <img src="res/tunnel.png" alt="">Mindstill - Tunnel</div>
+                    <div class="swiper-slide"> <img src="res/tunnel-network.png" alt="">Mindstill - Tunnel Network</div>
+                    <div class="swiper-slide"> <img src="res/diamond.png" alt="">Mindstill - Diamond</div>
+                    <div class="swiper-slide"> <img src="res/diamond-network.png" alt="">Mindstill Diamon - Network</div>
+                    <div class="swiper-slide"> <img src="res/particles.png" alt="">Mindstill - Particles</div>
+                    <div class="swiper-slide"> <img src="res/astrogame.png" alt="">Unity - Space Exploration Game</div>
+                    <div class="swiper-slide"> <img src="res/GymPass/GymPassLogin.png" alt="">GymPass - Login</div>
+                    <div class="swiper-slide"> <img src="res/GymPass/GymPassSignUp.png" alt="">GymPass - Sign Up</div>
+                    <div class="swiper-slide"> <img src="res/GymPass/GymPassHome.png" alt="">GymPass - Home</div>
+                    <div class="swiper-slide"> <img src="res/GymPass/GymPassSearch.png" alt="">GymPass - Search</div>
+                    <div class="swiper-slide"> <img src="res/GymPass/GymPassAutocomplete.png" alt="">GymPass - Autocomplete</div>
+                    <div class="swiper-slide"> <img src="res/GymPass/GymPassResults.png" alt="">GymPass - Results</div>
+                    <div class="swiper-slide"> <img src="res/GymPass/GymPassCalendar.png" alt="">GymPass - Calendar</div>
+                    <div class="swiper-slide"> <img src="res/GymPass/GymPassReservations.png" alt="">GymPass - Reservations</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!--
             <div class="slider">
                 <div class="slide" id="slide-1">
-                    <img src="path-to-your-image-1.jpg" alt="Description of Image 1">
+                    <img src="path-to-your-image-1.jpg" alt="Mindstill">
                     <div class="slide-content">
-                        <h3>Title of Project 1</h3>
-                        <p>Description of Project 1</p>
+                        <h3>Mindstill</h3>
+                        <p>This project merges video editing and procedural visual programming in an effective manner, utilizing 
+                            TouchDesigner and Adobe Premiere Pro. Within TouchDesigner, I carefully created each design displayed in the work’s 
+                            video sequence. Adobe Premiere Pro served as the tool that helped me piece together the exported designs, resulting in 
+                            a cohesive, visual experience.<br>Mindstill is an immersive installation designed to lead viewers on a visual journey 
+                            reflecting the vivid imagery that emerges during meditation. Through generative designs, spatial audio, and digital projections, 
+                            this contemplative space aims to foster mindfulness and encourage visitors to embrace the serenity and beauty found in 
+                            the present moment.</p>
                     </div>
                 </div>
                 <div class="slide" id="slide-2">
-                    <img src="path-to-your-image-2.jpg" alt="Description of Image 2">
+                    <img src="path-to-your-image-2.jpg" alt="">
                     <div class="slide-content">
-                        <h3>Title of Project 2</h3>
-                        <p>Description of Project 2</p>
+                        <h3>Gym Pass</h3>
+                        <p>This application acts as an intermediary, connecting its users with athletic facilities. Specifically, we provide temporary access to 
+                            non-members of sports clubs. This service becomes especially useful when traveling or living temporarily away from home without access 
+                            to one's home gym.<br>This application incorporates the Google Places API, Firebase Realtime Database, and Firebase Authentication to fetch and write
+                            user and Google Place data into the database. All basic UI designs were created with XML. This app was built on Android Studio.</p>
                     </div>
                 </div>
                 <div class="slide" id="slide-3">
                     <img src="path-to-your-image-3.jpg" alt="Description of Image 3">
                     <div class="slide-content">
-                        <h3>Title of Project 3</h3>
-                        <p>Description of Project 3</p>
+                        <h3>News App</h3>
+                        <p>This is a simple application built on Android Studio which utlizes the News API and the Google Maps SDK. Together, they allow for the user to search 
+                            articles based on genre, key words, and location. The search can also be made by entering an address on the map or dropping a pin, this mode also allows 
+                            for article filtering. 
+                        </p>
                     </div>
                 </div>
             </div>
+            <button class="prev-btn">Previous</button>
+            <button class="next-btn">Next</button>
+            -->
         </div>
     </section> 
-
+    
 
     <section class="education-section">
         <h2>Education & Certifications</h2>
@@ -216,5 +266,23 @@
         <br>
         <h4>Built by me &copy; 2023 Christian Garcia  | christiangarcia.info</h4>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> 
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+        });
+    </script>
 </body>
 </html>
