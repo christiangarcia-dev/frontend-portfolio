@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.contact-form-navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    align-items: center; 
+}
+
+.home-button img {
+    width:auto;
+    height: 150px;
+    transform: scale(0.7);
+}
+
+.quit-button svg {
+    width: auto;
+    height: 30px;
+    padding-right: 60px;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(134, 134, 134, 0.139);
+    width: 100%;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.avatar {
+    position: absolute;
+    top: calc(120px - 60px); /* navbar's height minus half of the avatar's height */
+    left: 50%; /* center it horizontally */
+    transform: translateX(-50%); /* ensures the avatar is centered by its middle, not left edge */
+    height: 120px;
+    width: 120px;
+    z-index: 1; /* make sure the avatar appears above the hr */
+}
+
+.subtitle-container {
+    margin: 0 auto;
+    width: 700px; 
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.input-container input {
+    height: 60px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 10px;  /* Adjust as needed */
+    color: rgb(134, 134, 134);
+    font-size: 18.5px;
+    font-weight: 100;
+}
+
+.input-container .input-group {
+    width: 335px;
+}
+
+.textarea-container {
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 30px;
+}
+
+.textarea-container textarea {
+    height: 200px;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    border: 1px solid rgba(181, 180, 180, 0.257); 
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: lighter;
+    line-height: 58px;
+    margin-bottom: 100px;
+}
+
+.submit-button {
+    border: 2px solid #00A0C3; 
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 14px 20px;
+    color: #00A0C3;
+    height: 50px;
+    width: 190px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: lighter;
+    font-style: bold;
+}
+
+.submit-button {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #00A0C3;
+    color: #fff;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    .input-container {
+        flex-direction: column;
+    }
+}
+

@@ -6,20 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="codepen-styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
     <title>Christian Garcia - Portfolio</title>
 </head>
 <body>
     <nav class="navbar">
-        <div id="logo"><img src="res/logo-blue-background.png" alt="logo" style="width: 90px"; height="auto"></div>
+        <div id="logo">
+            <a href="#">
+                <img src="res/logo-blue-background.png" alt="logo" style="width: 90px"; height="auto">
+            </a>
+        </div>
         <div id="navigation">
             <h3> <a id="projects-nav" href="#projects-section">Projects</a></h3>
-            <h3> <a id="contact-nav" href="#chat-form">Let's chat</a></h3>
+            <h3> <a id="contact-nav" href="contact.html">Let's chat</a></h3>
         </div>
     </nav>    
 
@@ -29,8 +41,12 @@
         <h1 class="title is-1">Front-End Developer | UI/UX Designer</h1>
         <br>
         <h2>I design and build user interfaces, welcome!</h2>
-        <img src="res/pfp.png" alt="pfp">
+        <img src="res/avatar.png" alt="pfp">
     </header>
+
+    <div class="digital-art">
+        <img src="res/webdev-art.png" alt="webdev-art">
+    </div>
 
     <section class="description-skills-section">
         <div class="personal-description">
@@ -47,7 +63,9 @@
 
         <div class="skills-container">
             <div class="frontend-box">
-                <img src="res/frontend-icon.png" alt="frontend-icon">
+                <div class="icon-container">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+                </div>
                 <h3>Frontend Dev.</h3>
                 <p>I enjoy translating my creative concepts into tactile, interactive experiences 
                     that strike a balance between elegance, simplicity, and responsiveness. All of 
@@ -69,7 +87,9 @@
             </div>
     
             <div class="uiux-box">
-                <img src="res/uiux-icon.png" alt="uiux-icon">
+                <div class="icon-container">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z"/></svg>
+                </div>
                 <h3>UI/UX Design</h3>
                 <p>In my design work, I love crafting visual narratives that speak to the user's experience. 
                     Through attention to detail and a deep understanding of aesthetics, I strive to bring clarity 
@@ -92,93 +112,54 @@
             </div>
         </div>
     </section>
-    
 
-    <section class="projects-section">
-        <div class="projects-container">
-            <h2>My Projects</h2>
-            <br>
-            <p>Being a recent graduate at 22, my experience has predominantly been in the realm of back-end development. 
-            Consequently, the projects you'll see here are not predominantly web-based. All the knowledge and skills I've 
-            gained in web development have been self-taught and honed during my personal time. Despite this, I'm now at 
-            the early stages of my front-end development career. While the projects showcased may not be traditional web 
-            projects, they encapsulate essential design principles, software tools, and programming languages vital to the 
-            field. The very website you're navigating is a testament to my front-end ability, having been crafted from scratch, 
-            exemplifying the knowledge I've accrued in both front-end development and design.</p>
-            <br> 
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"> <img src="res/tunnel.png" alt="">Mindstill - Tunnel</div>
-                    <div class="swiper-slide"> <img src="res/tunnel-network.png" alt="">Mindstill - Tunnel Network</div>
-                    <div class="swiper-slide"> <img src="res/diamond.png" alt="">Mindstill - Diamond</div>
-                    <div class="swiper-slide"> <img src="res/diamond-network.png" alt="">Mindstill Diamon - Network</div>
-                    <div class="swiper-slide"> <img src="res/particles.png" alt="">Mindstill - Particles</div>
-                    <div class="swiper-slide"> <img src="res/astrogame.png" alt="">Unity - Space Exploration Game</div>
-                    <div class="swiper-slide"> <img src="res/GymPass/GymPassLogin.png" alt="">GymPass - Login</div>
-                    <div class="swiper-slide"> <img src="res/GymPass/GymPassSignUp.png" alt="">GymPass - Sign Up</div>
-                    <div class="swiper-slide"> <img src="res/GymPass/GymPassHome.png" alt="">GymPass - Home</div>
-                    <div class="swiper-slide"> <img src="res/GymPass/GymPassSearch.png" alt="">GymPass - Search</div>
-                    <div class="swiper-slide"> <img src="res/GymPass/GymPassAutocomplete.png" alt="">GymPass - Autocomplete</div>
-                    <div class="swiper-slide"> <img src="res/GymPass/GymPassResults.png" alt="">GymPass - Results</div>
-                    <div class="swiper-slide"> <img src="res/GymPass/GymPassCalendar.png" alt="">GymPass - Calendar</div>
-                    <div class="swiper-slide"> <img src="res/GymPass/GymPassReservations.png" alt="">GymPass - Reservations</div>
+    <div id="codepen-section">
+        <section class="game-section">
+            <h2 class="line-title">Projects</h2>
+            <div class="owl-carousel custom-carousel owl-theme">
+                <div class="item active" style="background-image: url(https://i.imgur.com/7zEpFX6.png);">
+                <div class="item-desc">
+                    <h3>Mindstill</h3>
+                    <p>An immersive installation designed to lead viewers on a visual journey reflecting the vivid imagery
+                that emerges during meditation. This project merges video editing and procedural visual programming in an effective manner, utilizing
+                TouchDesigner and Adobe Premiere Pro. Other elements include projection and spatial audio. Used TouchDesigner to create designs displayed in the final video sequence. Used Premiere Pro to
+                stitch together individual clips.</p>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <!--
-            <div class="slider">
-                <div class="slide" id="slide-1">
-                    <img src="path-to-your-image-1.jpg" alt="Mindstill">
-                    <div class="slide-content">
-                        <h3>Mindstill</h3>
-                        <p>This project merges video editing and procedural visual programming in an effective manner, utilizing 
-                            TouchDesigner and Adobe Premiere Pro. Within TouchDesigner, I carefully created each design displayed in the work’s 
-                            video sequence. Adobe Premiere Pro served as the tool that helped me piece together the exported designs, resulting in 
-                            a cohesive, visual experience.<br>Mindstill is an immersive installation designed to lead viewers on a visual journey 
-                            reflecting the vivid imagery that emerges during meditation. Through generative designs, spatial audio, and digital projections, 
-                            this contemplative space aims to foster mindfulness and encourage visitors to embrace the serenity and beauty found in 
-                            the present moment.</p>
-                    </div>
                 </div>
-                <div class="slide" id="slide-2">
-                    <img src="path-to-your-image-2.jpg" alt="">
-                    <div class="slide-content">
-                        <h3>Gym Pass</h3>
-                        <p>This application acts as an intermediary, connecting its users with athletic facilities. Specifically, we provide temporary access to 
-                            non-members of sports clubs. This service becomes especially useful when traveling or living temporarily away from home without access 
-                            to one's home gym.<br>This application incorporates the Google Places API, Firebase Realtime Database, and Firebase Authentication to fetch and write
-                            user and Google Place data into the database. All basic UI designs were created with XML. This app was built on Android Studio.</p>
-                    </div>
+                <div class="item" style="background-image: url(https://i.imgur.com/LkVYMHB.png);">
+                <div class="item-desc">
+                    <h3>Unity Space Game</h3>
+                    <p>Built a three dimensional space exploration game using my own Blender models as well as imported ones. The objective of the game is to allow the user to travel through outer space and visualize planets, satellites, and cosmic phenomena.</p>
                 </div>
-                <div class="slide" id="slide-3">
-                    <img src="path-to-your-image-3.jpg" alt="Description of Image 3">
-                    <div class="slide-content">
-                        <h3>News App</h3>
-                        <p>This is a simple application built on Android Studio which utlizes the News API and the Google Maps SDK. Together, they allow for the user to search 
-                            articles based on genre, key words, and location. The search can also be made by entering an address on the map or dropping a pin, this mode also allows 
-                            for article filtering. 
-                        </p>
+                </div>
+                <div class="item" style="background-image: url(https://i.imgur.com/8s6pVph.png);">
+                    <div class="item-desc">
+                        <h3>GymPass</h3>
+                        <p>Built an Android app that acts as an intermediary that connects its users with athletic facilities for
+                temporary access. Used Google Places API, Firebase Realtime Database, and Firebase Authentication to fetch and write
+                user/place data into the database. Implemented layout designs with XML.</p>
                     </div>
+                    </div>
+                <div class="item" style="background-image: url(https://i.imgur.com/8zqcbvD.png);">
+                <div class="item-desc">
+                    <h3>Portfolio Website</h3>
+                    <p>Designed my personal website using hand-drawn sketches and Figma. Proceeded to build it using raw HTML, CSS, and JS. No frameworks were used throughout the development of this website.</p>
+                </div>
                 </div>
             </div>
-            <button class="prev-btn">Previous</button>
-            <button class="next-btn">Next</button>
-            -->
-        </div>
-    </section> 
-    
+            </div>
+        </section>
+    </div>
+
 
     <section class="education-section">
-        <h2>Education & Certifications</h2>
-        <hr>
+        <!-- <h2>Education & Certifications</h2>
+        <hr> -->
         <div class="card-container">
             <div class="card" id="card1-gwu-cs">
                 <div class="card-front">
                     <!-- SVG or Image goes here -->
-                    <img src="path-to-your-image.svg" alt="gwu-svg">
+                    <img src="res/gwu.png" alt="gwu-svg">
                 </div>
                 <div class="card-back">
                     <!-- Back content here -->
@@ -192,7 +173,7 @@
             <div class="card" id="card2-gwu-ixd">
                 <div class="card-front">
                     <!-- SVG or Image goes here -->
-                    <img src="path-to-your-image.svg" alt="gwu-svg">
+                    <img src="res/gwu.png" alt="gwu-svg">
                 </div>
                 <div class="card-back">
                     <!-- Back content here -->
@@ -202,87 +183,127 @@
                     <p>May 2023</p>
                 </div>
             </div>
-        </div>
 
-        <div class="card" id="card3-udemy">
-            <div class="card-front">
-                <!-- SVG or Image goes here -->
-                <img src="path-to-your-image.svg" alt="udemy-svg">
+            <div class="card" id="card3-udemy">
+                <div class="card-front">
+                    <!-- SVG or Image goes here -->
+                    <img src="res/udemy.png" alt="udemy-svg">
+                </div>
+                <div class="card-back">
+                    <!-- Back content here -->
+                    <h3>The Web Developer Bootcamp 2023</h3>
+                    <p>Udemy</p>
+                    <p>Remote</p>
+                    <p>January 2023</p>
+                </div>
             </div>
-            <div class="card-back">
-                <!-- Back content here -->
-                <h3>The Web Developer Bootcamp 2023</h3>
-                <p>Udemy</p>
-                <p>Remote</p>
-                <p>January 2023</p>
-            </div>
-        </div>
 
-        <div class="card" id="card4-coursera">
-            <div class="card-front">
-                <!-- SVG or Image goes here -->
-                <img src="path-to-your-image.svg" alt="coursera-svg">
-            </div>
-            <div class="card-back">
-                <!-- Back content here -->
-                <h3>Meta Front-End Developer Professional Certificate</h3>
-                <p>Coursera</p>
-                <p>Remote</p>
-                <p>Ongoing</p>
+            <div class="card" id="card4-coursera">
+                <div class="card-front">
+                    <!-- SVG or Image goes here -->
+                    <img src="res/coursera.png" alt="coursera-svg">
+                </div>
+                <div class="card-back">
+                    <!-- Back content here -->
+                    <h3>Meta Front-End Developer Professional Certificate</h3>
+                    <p>Coursera</p>
+                    <p>Remote</p>
+                    <p>Ongoing</p>
+                </div>
             </div>
         </div>
 
         <button class="resume-button">
-            <a href="res/Christian Garcia - Resume.pdf" download>
-              <img src="path-to-your-icon.png" alt="download-svg">
-              Download Resume
+            <a href="res/Christian Garcia - Resume.pdf" target="_blank" download>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 384 512">
+                    <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com 
+                    License - https://fontawesome.com/license (Commercial License) 
+                    Copyright 2023 Fonticons, Inc. -->
+                    <style>
+                        svg {
+                            fill: #ffffff;
+                        }
+                    </style>
+                    <path d="M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z"/>
+                </svg>
+                Download Resume
             </a>
         </button>
     </section>
     
+    <div class="bottom-container">
+        <!-- <section class="whitespace">
+            <hr class="whitespace-line">
+            <!-- change name to whitespace -->
+        <!-- </section> -->
     
-    <section class="profile-picture">
-        <div class="pfp-container">
-          <img src="res/webwizard.png" alt="Profile Picture">
-        </div>
-    </section>
-
-    <div class="cta-box">
-        <h3>Interested in working together?</h3>
-        <a href="contact.html" class="cta-button">Let's chat</a>
-    </div>      
-
-
-    <footer>
-        <div id="logo"><img src="res/logo-white-background.png" alt="logo" style="width: 90px"; height="auto"></div>
-        <h4>Living and fulfilling the Kaizen philosophy.</h4>
-        <span>
-            <img src="res/instagram.png" alt="instagram">
-            <img src="res/dribble.png" alt="dribble">
-            <img src="res/linkedin.png" alt="linkedin">
-            <img src="res/github.png" alt="github">
-            <img src="res/mail.png" alt="mail">
-        </span>
-        <br>
-        <h4>Built by me &copy; 2023 Christian Garcia  | christiangarcia.info</h4>
-    </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> 
-    <!-- Initialize Swiper -->
+        <div class="cta-box">
+            <h3>Let's create together</h3>
+            <div>
+                <p>I would love to hear about any projects you'd like my collaboration with. Coffee's on me.</p>
+            </div> 
+            <button>
+                <a href="contact.html" class="cta-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M370.7 96.1C346.1 39.5 289.7 0 224 0S101.9 39.5 77.3 96.1C60.9 97.5 48 111.2 48 128v64c0 16.8 12.9 30.5 29.3 31.9C101.9 280.5 158.3 320 224 320s122.1-39.5 146.7-96.1c16.4-1.4 29.3-15.1 29.3-31.9V128c0-16.8-12.9-30.5-29.3-31.9zM336 144v16c0 53-43 96-96 96H208c-53 0-96-43-96-96V144c0-26.5 21.5-48 48-48H288c26.5 0 48 21.5 48 48zM189.3 162.7l-6-21.2c-.9-3.3-3.9-5.5-7.3-5.5s-6.4 2.2-7.3 5.5l-6 21.2-21.2 6c-3.3 .9-5.5 3.9-5.5 7.3s2.2 6.4 5.5 7.3l21.2 6 6 21.2c.9 3.3 3.9 5.5 7.3 5.5s6.4-2.2 7.3-5.5l6-21.2 21.2-6c3.3-.9 5.5-3.9 5.5-7.3s-2.2-6.4-5.5-7.3l-21.2-6zM112.7 316.5C46.7 342.6 0 407 0 482.3C0 498.7 13.3 512 29.7 512H128V448c0-17.7 14.3-32 32-32H288c17.7 0 32 14.3 32 32v64l98.3 0c16.4 0 29.7-13.3 29.7-29.7c0-75.3-46.7-139.7-112.7-165.8C303.9 338.8 265.5 352 224 352s-79.9-13.2-111.3-35.5zM176 448c-8.8 0-16 7.2-16 16v48h32V464c0-8.8-7.2-16-16-16zm96 32a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"/></svg>
+                    Let's Begin
+                </a>
+            </button>
+        </div>      
+    
+        <footer>
+            <a href="#">
+                <div id="logo"><img src="res/logo-white-background.png" alt="logo" style="width: 90px"; height="auto"></div>
+            </a>
+            <h4>Living and fulfilling the Kaizen philosophy.</h4>
+            <div  class="social-links-container">
+                <a class="social-links" href="https://www.instagram.com/christiangarcia.d" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+                <a class="social-links" href="https://dribbble.com/yourusername" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z"/></svg>
+                </a>
+                <a class="social-links" href="https://www.linkedin.com/in/christian-garcia-diaz-5712b8241" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                </a>
+                <a class="social-links" href="https://github.com/christiangarcia-dev" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                </a>
+                <a class="social-links" href="mailto:2001christiangarcia@gmail.com" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+                </a>
+            </div>
+            <br>
+            <h4>Built by me &copy; 2023 Christian Garcia  | christiangarcia.info</h4>
+        </footer>
+    </div>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-        cssMode: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        mousewheel: true,
-        keyboard: true,
+        $(".custom-carousel").owlCarousel({
+            autoWidth: true,
+            loop: true
+        });
+        $(document).ready(function () {
+            $(".custom-carousel .item").click(function () {
+                $(".custom-carousel .item").not($(this)).removeClass("active");
+                $(this).toggleClass("active");
+            });
         });
     </script>
+    
+    <!--<script type="text/javascript">
+        $(document).ready(function(){
+          $('.my-carousel').slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            arrows: true
+          });
+        });
+      </script> -->
 </body>
-</html>
+</html> 

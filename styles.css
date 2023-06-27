@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 body {
@@ -43,10 +44,19 @@ body {
     border-radius: 30px;
 }
 
+#contact-nav {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+#contact-nav:hover {
+    background-color: #00A0C3;
+    color: #FFF;
+    border-color: #00A0C3;
+}
+
 #projects-nav {
     color: #000
 }
-
 
 /* INITIAL AREA */ 
 .welcome-section {
@@ -90,7 +100,20 @@ header h2 {
 }
 
 header img {
-    width: 260px;
+    width: 290px;
+    height: auto;
+}
+
+.digital-art {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.digital-art img {
+    width: 1000px;
     height: auto;
 }
 
@@ -102,10 +125,9 @@ header img {
     width: auto;
     height: 1100px;
     background: linear-gradient(to top, #00A0C3, #007090);
-
     padding: 0px 207px;
     text-align: center;
-    margin-top: 185px;
+    margin-top: 0px;
 }
 
 .personal-description h2 {
@@ -132,8 +154,8 @@ header img {
 .description-skills-section {
     position: relative; /* makes the skills-container position relative to this container */
     padding-bottom: 0px; /* creates space at the bottom of personal-description for skills-container */
+    height: 1890px;
 }
-
 
 /* SKILLS */ 
 .skills-container {
@@ -149,7 +171,7 @@ header img {
     display: flex;
     flex-direction: column;
     align-items: center; /* centers the child elements horizontally */
-    border: 2px solid rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(124, 124, 124, 0.2);
     padding: 20px; /* gives some space around the content inside the boxes */
     margin: 0; /* gives some space between the boxes */
     width: 507px; /* set box width */
@@ -163,22 +185,37 @@ header img {
 .frontend-box {
     border-radius: 14px 0px 0px 14px;
     border-right-width: -0.1em;
-    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: -10px 0px 25px -5px rgba(0, 0, 0, 0.288);
 }
 
 .uiux-box {
     border-radius: 0px 14px 14px 0px;
     border-left-width: 0em;
-    box-shadow: 0px 1.4px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 0px 25px -5px rgba(0, 0, 0, 0.288);
 }
 
-.frontend-box img,
-.uiux-box img {
-    width: 100px; /* adjust as per your requirements */
-    height: auto;
-    padding-top: 39px;
-    padding-bottom: 50px;
+.icon-container {
+    width: 100px; /* Size of circle */
+    height: 100px; /* Size of circle */
+    border-radius: 50%; /* Make it a circle */
+    position: relative; /* This allows absolute positioning for children */
+    background: #ff725e; /* Change to the color you want */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0px; 
 }
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the icon */
+    width: 60%; /* Adjust as needed */
+    height: auto;
+    fill: rgb(46, 46, 46); /* The color of the icon */
+}
+
 
 .frontend-box hr,
 .uiux-box hr {
@@ -204,7 +241,7 @@ header img {
 
 .frontend-box h4, 
 .uiux-box h4 {
-    color:#00A0C3; 
+    color: #f4513c; 
     font-weight: bold;
     font-size: 16px;
 }
@@ -222,6 +259,7 @@ header img {
 
 /* PROJECTS */ 
 .projects-container h2, 
+.projects-container h3,
 .projects-container p {
     display: flex;
     flex-direction: column;
@@ -240,98 +278,406 @@ header img {
     margin-bottom: 60px;
 }
 
-.swiper {
-    width: 960px;
-    height: 480px;
-    margin-bottom: 100px;
-    padding-bottom: 100px;
-  }
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.my-carousel {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%; /* or any other percentage or pixel value */
+    border: 1px solid black;
+    border-radius: 30px;
 }
 
-.swiper-slide img {
+.my-carousel img {
+    max-height: 400px;
+    width: auto;
     display: block;
+    margin: 0 auto;
+}
+
+/* Positioning the navigation arrows */
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    background-color: red; /* Semi-transparent */
+    color: #000;
+    z-index: 1000;
+    font-size: 20px; /* Size of the arrow symbols */
+    text-align: center;
+    line-height: 30px; /* Vertically center the arrow symbols */
+    border-radius: 50%; /* Circular buttons */
+}
+
+/* Content and position */
+.slick-prev:before {
+    content: '\2190'; /* Using arrow character */
+}
+
+.slick-next:before {
+    content: '\2192'; /* Using arrow character */
+}
+
+.slick-prev {
+    left: -40px; /* Position within the carousel */
+}
+
+.slick-next {
+    right: -40px; /* Position within the carousel */
+} 
+
+/* Styling the navigation dots */
+.slick-dots {
+    bottom: -60px; /* Increase this value for more space */
+    text-align: center;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.slick-dots li button:before {
+    content: ' ';
+    background-color: #000; /* Adjust as necessary */
+    border-radius: 50%;
+    display: block;
+    height: 10px; /* Adjust as necessary */
+    width: 10px; /* Adjust as necessary */
+}
+
+.slick-dots li.slick-active button:before {
+    background-color: #00A0C3; /* Adjust as necessary */
+}
+
+.education-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #FFF, #009fc370, #FFF);
+    padding: 0px;
+    height: 930px;
+    width: auto;
+}
+
+
+.education-section h2 {
+    color: #FFF;
+    font-size: 46px;
+    font-style: bold;
+    margin-bottom: 20px;
+    padding-top: 80px;
+}
+
+.education-section hr {
+    margin-bottom: 70px;
+    width: 790px;
+    height: 2px;
+}
+
+/* CARD CONTAINER */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 105px;     /* This is the vertical gap between rows */
+    grid-column-gap: 105px;  /* This is the horizontal gap between columns */
+    width: auto;
+    justify-items: center;
+}
+
+
+/* CARD */
+.card {
+    background: #ffffff;
+    width: 454px; 
+    height: 244px; 
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
+    position: relative;
+    perspective: 1000px; /* Required for the 3D effect on flip */
+}
+
+/* CARD FRONT/BACK */
+.card .card-front,
+.card .card-back {
+    position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: contain;
-}
-
-.swiper-button-next {
-    color: #007090;
-}
-
-.swiper-button-prev {
-    color: #007090;
-}
-
-
-/* CONTACT */ 
-.contact-section {
+    transition: opacity 0.6s ease; /* Animate the opacity property */
+    border-radius: 30px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: auto;
-    height: 650px;
-    background: linear-gradient(to top, #00A0C3, #007090);
+    justify-content: center;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
-    padding: 0px 207px;
+/* CARD FRONT */
+.card .card-front {
+    background: #ffffff;
+    opacity: 1;  /* Initially visible */
+    z-index: 2;  /* Initially on top */
+}
+
+.card .card-front img {
+    width: 170px;
+    height: auto;
+}
+
+/* CARD BACK */
+.card .card-back {
+    background: #f8f8f8;
+    opacity: 0;  /* Initially hidden */
+    z-index: 1;  /* Initially below */
     text-align: center;
-    margin-top: 185px;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
 }
 
-.contact-section h2 {
-    padding-top: 153px;
-    color: #fff;
-    font-size: 40px;
+#card1-gwu-cs .card-back {
+    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
 }
 
-.contact-section p {
-    padding-top: 38px;
-    color: #fff;
-    font-size: 26px;
-    font-weight: 10;
-    line-height: 200%;
+#card2-gwu-ixd .card-back {
+    background: linear-gradient(to right, #4ac29a, #bdfff3);
 }
 
-.contact-section hr {
-    width: 546px;
-    margin-top: 82px;
-    margin-bottom: 20px;
-    color: #fff;
+#card3-udemy .card-back {
+    background: linear-gradient(to right, #9796f0, #fbc7d4);
 }
 
-.contact-section form {
+#card4-coursera .card-back {
+    background: linear-gradient(to right, #2bc0e4, #eaecc6);
+}
+
+.card-back h3 {
+    text-align: center;
+}
+
+.card-back p :nth-child(2) {
+    text-align: center;
+}
+
+.card-back p :nth-child(3) {
+    text-align: center;
+}
+
+/* HOVER EFFECT */
+.card:hover .card-front {
+    opacity: 0;  /* Hide front side on hover */
+}
+
+.card:hover .card-back {
+    opacity: 1;  /* Show back side on hover */
+}
+
+.resume-button {
+    margin-top: 80px;
+    margin-bottom: 180px;
+    border: 2px solid #00A0C3;
+    border-radius: 30px;
+    background-color: #FFF;
+    display: inline-flex; /* to keep the button inline but elements inside it aligned flex */
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.resume-button a {
+    text-decoration: none;
+    font-size: 17px;
+    font-style: bold;
+    letter-spacing: 1px;
+    color: #00A0C3;
+    display: flex; /* to align icon and text next to each other */
+    align-items: center; /* to vertically align icon and text */
+    padding: 15px 25px; /* to increase size of capsule */
+    gap: 15px; /* to add space between icon and text */
+}
+
+.resume-button svg {
+    fill: #00A0C3; 
+    width: 1em;
+}
+
+.resume-button:hover {
+    background-color: #00A0C3;
+    border-color: #00A0C3;
+}
+
+.resume-button:hover a {
+    color: #FFF;
+}
+
+.resume-button:hover svg {
+    fill: #FFF;
+}
+
+.cta-box {
+    position: absolute;
+    background-color: #002C35;
+    border: 1px solid #002C35;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr 0.4fr;
+    align-items: center;
+    align-self: center;
+    width: 90%;
+    height: 200px;
+    text-align: center;
+    z-index: 3;
+    gap: 20px;
+    padding: 0 30px;
+    bottom: 600px;
+
+}
+
+.cta-box h3 {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    grid-column: 1;
+}
+
+.cta-box p {
+    color: #FFF;
+    font-size: 15px;
+    grid-column: 2;
+    line-height: 24px;
+}
+
+.cta-box a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 100;
+    color: #FFF;
+    text-align: center;
+    display: flex; /* to align icon and text next to each other */
+    align-items: center; /* to vertically align icon and text */
+    padding: 17px 35px; /* to increase size of capsule */
+    gap: 8px; /* to add space between icon and text */
+}
+
+.cta-box svg {
+    width: 1.5em;
+}
+
+.cta-box button  {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    grid-column: 3;
+    justify-self: center;
+}
+
+.cta-box button:hover {
+    background-color: #FFF;
+    border-color: #FFF;
+}
+
+.cta-box button a:hover {
+    color: #002C35;
+    font: bold;
+}
+
+.cta-box button a:hover svg {
+    fill: #002C35;
+}
+
+
+.cta-box button {
+    border: 2px solid #16ecda;
+    border-radius: 30px;
+    background-color: #002C35;
+    letter-spacing: 1px;
+}
+
+footer {
+    height: 720px;
+    background-color: #00A0C3;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    z-index: 1;
 }
 
-.contact-section input, textarea {
-    margin: 10px;
-    width: 50%;
+footer div {
+    margin-top: 180px;
+    margin-bottom: 60px;
+}
+
+.social-links-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    border: 1.7px solid #FFF; 
+    background-color: #2F2F2F; 
+    border-radius: 50px; 
+    padding: 14px; 
+    margin: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
     padding: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
 }
 
-.contact-section button {
-    margin-top: 20px;
-    width: 20%;
-    padding: 10px;
-    background-color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.social-links svg {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    scale: 1.1;
 }
 
-.contact-section button:hover {
-    background-color: #007090;
-    color: #fff;
+.social-links:hover {
+    transform: scale(1.1);
+    background-color: #FFF;
 }
 
+.social-links:hover svg {
+    transform: scale(1.1);
+    fill: #2F2F2F;
+}
+
+a.social-links:link, a.social-links:visited, a.social-links:hover, a.social-links:active {
+    text-decoration: none;
+}
+
+footer h4 {
+    color: #FFF;
+    font-size: 17px;
+    font-weight: lighter;
+    width: 300px;
+    text-align: center;
+}
+
+.bottom-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+} 
+
+#codepen-section {
+    margin: 0 auto; 
+    width: 71%;
+    border: 1px solid rgba(124, 124, 124, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
+    border-radius: 2%;
+    margin-bottom: 100px;
+}
+
+#codepen-section .owl-dots .owl-dot span {
+    margin: 0 5px; /* Change 5px to the amount of margin you desire */
+}
