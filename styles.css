@@ -1,3 +1,4 @@
+/* GLOBAL */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,43 +10,45 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
-
 /* NAVBAR */ 
 .navbar {
     display: flex;
     justify-content: space-between;
-    width: 1368px;
-    height: 150px;
+    width: 100%;
+    height: 22vh;
     align-items: center; 
-    padding: 0 20px; /* add padding on the sides of the navbar */
+    padding: 0 1.5%; 
+}
+
+#logo {
+    width: 10em; /* Adjust as needed */
+    padding: 0em;
 }
 
 #logo img {
-    width:auto;
-    height: 150;
-    transform: scale(1.8);
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 #navigation {
     display: flex;
-    gap: 13px; /* adds space between the h3 items */
+    gap: 1em; 
 }
 
 #navigation h3 a {
-    text-decoration: none; /* removes underline from links */
+    text-decoration: none; 
     font-weight: 20;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
+    font-size: 1.25rem;
+    padding: 0.5em 1em; 
 }
 
 #contact-nav {
     color: #00A0C3;
     border: solid #00A0C3 2px;
     border-radius: 30px;
-}
-
-#contact-nav {
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    margin-right: 1.7em;
 }
 
 #contact-nav:hover {
@@ -63,7 +66,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 0px;
+    margin-top: 30px;
 }
 
 .welcome-section hr {
@@ -73,10 +76,9 @@ body {
     margin-bottom: 50px;
 }
 
-
 .welcome-section h1 {
     text-align: center;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 300;
 }
 
@@ -117,7 +119,7 @@ header img {
     height: auto;
 }
 
-/* MY DESCRIPTION */ 
+/* ABOUT ME SECTION */ 
 .personal-description {
     display: flex;
     flex-direction: column;
@@ -157,7 +159,6 @@ header img {
     height: 1890px;
 }
 
-/* SKILLS */ 
 .skills-container {
     position: relative;
     top: -380px; /* Adjust this value to shift the boxes up */
@@ -170,13 +171,13 @@ header img {
 .uiux-box {
     display: flex;
     flex-direction: column;
-    align-items: center; /* centers the child elements horizontally */
+    align-items: center; 
     border: 1px solid rgba(124, 124, 124, 0.2);
-    padding: 20px; /* gives some space around the content inside the boxes */
-    margin: 0; /* gives some space between the boxes */
-    width: 507px; /* set box width */
-    height: 1015px; /* set box height */
-    text-align: center; /* center the text */
+    padding: 20px; 
+    margin: 0; 
+    width: 507px; 
+    height: 1015px; 
+    text-align: center; 
     background-color: #FFF;
     line-height: 30px;
     
@@ -257,101 +258,7 @@ header img {
 }
 
 
-/* PROJECTS */ 
-.projects-container h2, 
-.projects-container h3,
-.projects-container p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 207px;
-    line-height: 40px;
-    text-align: center;
-}
-
-.projects-container h2 {
-    font-size: 34px;
-}
-
-.projects-container p {
-    margin-bottom: 60px;
-}
-
-.my-carousel {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%; /* or any other percentage or pixel value */
-    border: 1px solid black;
-    border-radius: 30px;
-}
-
-.my-carousel img {
-    max-height: 400px;
-    width: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Positioning the navigation arrows */
-.slick-prev, .slick-next {
-    position: absolute;
-    top: 50%;
-    width: 30px;
-    height: 30px;
-    transform: translateY(-50%);
-    background-color: red; /* Semi-transparent */
-    color: #000;
-    z-index: 1000;
-    font-size: 20px; /* Size of the arrow symbols */
-    text-align: center;
-    line-height: 30px; /* Vertically center the arrow symbols */
-    border-radius: 50%; /* Circular buttons */
-}
-
-/* Content and position */
-.slick-prev:before {
-    content: '\2190'; /* Using arrow character */
-}
-
-.slick-next:before {
-    content: '\2192'; /* Using arrow character */
-}
-
-.slick-prev {
-    left: -40px; /* Position within the carousel */
-}
-
-.slick-next {
-    right: -40px; /* Position within the carousel */
-} 
-
-/* Styling the navigation dots */
-.slick-dots {
-    bottom: -60px; /* Increase this value for more space */
-    text-align: center;
-}
-
-.slick-dots li {
-    display: inline-block;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.slick-dots li button:before {
-    content: ' ';
-    background-color: #000; /* Adjust as necessary */
-    border-radius: 50%;
-    display: block;
-    height: 10px; /* Adjust as necessary */
-    width: 10px; /* Adjust as necessary */
-}
-
-.slick-dots li.slick-active button:before {
-    background-color: #00A0C3; /* Adjust as necessary */
-}
-
+/* EDUCATION SECTION */
 .education-section {
     display: flex;
     flex-direction: column;
@@ -362,7 +269,6 @@ header img {
     height: 930px;
     width: auto;
 }
-
 
 .education-section h2 {
     color: #FFF;
@@ -378,18 +284,15 @@ header img {
     height: 2px;
 }
 
-/* CARD CONTAINER */
 .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 105px;     /* This is the vertical gap between rows */
-    grid-column-gap: 105px;  /* This is the horizontal gap between columns */
+    grid-row-gap: 105px; 
+    grid-column-gap: 105px; 
     width: auto;
     justify-items: center;
 }
 
-
-/* CARD */
 .card {
     background: #ffffff;
     width: 454px; 
@@ -400,7 +303,6 @@ header img {
     perspective: 1000px; /* Required for the 3D effect on flip */
 }
 
-/* CARD FRONT/BACK */
 .card .card-front,
 .card .card-back {
     position: absolute;
@@ -415,7 +317,6 @@ header img {
     box-sizing: border-box;
 }
 
-/* CARD FRONT */
 .card .card-front {
     background: #ffffff;
     opacity: 1;  /* Initially visible */
@@ -466,7 +367,6 @@ header img {
     text-align: center;
 }
 
-/* HOVER EFFECT */
 .card:hover .card-front {
     opacity: 0;  /* Hide front side on hover */
 }
@@ -481,7 +381,7 @@ header img {
     border: 2px solid #00A0C3;
     border-radius: 30px;
     background-color: #FFF;
-    display: inline-flex; /* to keep the button inline but elements inside it aligned flex */
+    display: inline-flex; 
     justify-content: center;
     align-items: center;
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
@@ -493,10 +393,10 @@ header img {
     font-style: bold;
     letter-spacing: 1px;
     color: #00A0C3;
-    display: flex; /* to align icon and text next to each other */
-    align-items: center; /* to vertically align icon and text */
-    padding: 15px 25px; /* to increase size of capsule */
-    gap: 15px; /* to add space between icon and text */
+    display: flex; 
+    align-items: center; 
+    padding: 15px 25px; 
+    gap: 15px; 
 }
 
 .resume-button svg {
@@ -517,6 +417,8 @@ header img {
     fill: #FFF;
 }
 
+
+/* BOTTOM SECTION */ 
 .cta-box {
     position: absolute;
     background-color: #002C35;
@@ -558,7 +460,7 @@ header img {
     text-align: center;
     display: flex; /* to align icon and text next to each other */
     align-items: center; /* to vertically align icon and text */
-    padding: 17px 35px; /* to increase size of capsule */
+    padding: 17px 35px; 
     gap: 8px; /* to add space between icon and text */
 }
 
@@ -585,7 +487,6 @@ header img {
 .cta-box button a:hover svg {
     fill: #002C35;
 }
-
 
 .cta-box button {
     border: 2px solid #16ecda;
@@ -669,15 +570,9 @@ footer h4 {
     justify-content: center;
 } 
 
-#codepen-section {
-    margin: 0 auto; 
-    width: 71%;
-    border: 1px solid rgba(124, 124, 124, 0.2);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
-    border-radius: 2%;
-    margin-bottom: 100px;
-}
+/* Breakpoints: 
+        - Mobile (375px) 
+        - Tablet (768px) 
+        - Desktop (1024px) 
+*/
 
-#codepen-section .owl-dots .owl-dot span {
-    margin: 0 5px; /* Change 5px to the amount of margin you desire */
-}

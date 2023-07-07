@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="codepen-styles.css">
-    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +18,13 @@
     <title>Christian Garcia - Portfolio</title>
 </head>
 <body>
+    <!-- HOME SECTION -->
     <nav class="navbar">
         <div id="logo">
             <a href="#">
-                <img src="res/logo-blue-background.png" alt="logo" style="width: 90px"; height="auto">
+                <img src="res/logo-blue-background.png" alt="logo">
             </a>
-        </div>
+        </div>        
         <div id="navigation">
             <h3> <a id="projects-nav" href="#projects-section">Projects</a></h3>
             <h3> <a id="contact-nav" href="contact.html">Let's chat</a></h3>
@@ -32,7 +32,6 @@
     </nav>    
 
     <header class="welcome-section">
-        <hr> <!-- horizontal line -->
         <div></div>
         <h1 class="title is-1">Front-End Developer | UI/UX Designer</h1>
         <br>
@@ -43,7 +42,9 @@
     <div class="digital-art">
         <img src="res/webdev-art.png" alt="webdev-art">
     </div>
+    <!-- HOME SECTION CLOSE -->
 
+    <!-- ABOUT ME SECTION -->
     <section class="description-skills-section">
         <div class="personal-description">
             <h2>Hi. I'm Christian.</h2>
@@ -108,7 +109,9 @@
             </div>
         </div>
     </section>
+    <!-- ABOUT ME SECTION CLOSE -->
 
+    <!-- PROJECTS SECTION -->
     <div id="codepen-section">
         <section class="game-section">
             <h2 class="line-title">Projects</h2>
@@ -145,11 +148,10 @@
             </div>
         </section>
     </div>
+    <!-- PROJECTS SECTION CLOSE -->
 
-
+    <!-- EDUCATION SECTION -->
     <section class="education-section">
-        <!-- <h2>Education & Certifications</h2>
-        <hr> -->
         <div class="card-container">
             <div class="card" id="card1-gwu-cs">
                 <div class="card-front">
@@ -167,11 +169,9 @@
             
             <div class="card" id="card2-gwu-ixd">
                 <div class="card-front">
-                    <!-- SVG or Image goes here -->
                     <img src="res/gwu.png" alt="gwu-svg">
                 </div>
                 <div class="card-back">
-                    <!-- Back content here -->
                     <h3>B.F.A in Interaction Design</h3>
                     <p>George Washington University</p>
                     <p>Washington, DC</p>
@@ -181,11 +181,9 @@
 
             <div class="card" id="card3-udemy">
                 <div class="card-front">
-                    <!-- SVG or Image goes here -->
                     <img src="res/udemy.png" alt="udemy-svg">
                 </div>
                 <div class="card-back">
-                    <!-- Back content here -->
                     <h3>The Web Developer Bootcamp 2023</h3>
                     <p>Udemy</p>
                     <p>Remote</p>
@@ -195,11 +193,9 @@
 
             <div class="card" id="card4-coursera">
                 <div class="card-front">
-                    <!-- SVG or Image goes here -->
                     <img src="res/coursera.png" alt="coursera-svg">
                 </div>
                 <div class="card-back">
-                    <!-- Back content here -->
                     <h3>Meta Front-End Developer Professional Certificate</h3>
                     <p>Coursera</p>
                     <p>Remote</p>
@@ -213,7 +209,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 384 512">
                     <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com 
                     License - https://fontawesome.com/license (Commercial License) 
-                    Copyright 2023 Fonticons, Inc. -->
+                    Copyright 2023 Fonticons, Inc. --> 
                     <style>
                         svg {
                             fill: #ffffff;
@@ -225,13 +221,11 @@
             </a>
         </button>
     </section>
+    <!-- EDUCATION SECTION CLOSE -->
+
     
+    <!-- BOTTOM SECTION -->
     <div class="bottom-container">
-        <!-- <section class="whitespace">
-            <hr class="whitespace-line">
-            <!-- change name to whitespace -->
-        <!-- </section> -->
-    
         <div class="cta-box">
             <h3>Let's create together</h3>
             <div>
@@ -271,8 +265,9 @@
             <h4>Built by me &copy; 2023 Christian Garcia  | christiangarcia.info</h4>
         </footer>
     </div>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <!-- BOTTOM SECTION CLOSE -->
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
@@ -287,18 +282,5 @@
             });
         });
     </script>
-    
-    <!--<script type="text/javascript">
-        $(document).ready(function(){
-          $('.my-carousel').slick({
-            dots: false,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            adaptiveHeight: true,
-            arrows: true
-          });
-        });
-      </script> -->
 </body>
 </html> 

@@ -169,6 +169,19 @@
     padding: 0 10px; /* Change 5px to the amount of padding you desire */
 }
 
+#codepen-section {
+    margin: 0 auto; 
+    width: 71%;
+    border: 1px solid rgba(124, 124, 124, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
+    border-radius: 2%;
+    margin-bottom: 100px;
+}
+
+#codepen-section .owl-dots .owl-dot span {
+    margin: 0 5px; /* Change 5px to the amount of margin you desire */
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
     #codepen-section h2 {
       margin-bottom: 32px;
