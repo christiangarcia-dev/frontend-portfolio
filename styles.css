@@ -21,12 +21,13 @@ body {
 }
 
 #logo {
-    width: 10em; /* Adjust as needed */
-    padding: 0em;
+    width: 11%; 
+    min-width: 140px;
 }
 
 #logo img {
     width: 100%;
+    min-width: 140px; 
     height: auto;
     display: block;
 }
@@ -45,7 +46,7 @@ body {
 
 #contact-nav {
     color: #00A0C3;
-    border: solid #00A0C3 2px;
+    border: solid #00A0C3 0.15rem;
     border-radius: 30px;
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     margin-right: 1.7em;
@@ -66,42 +67,28 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 30px;
-}
-
-.welcome-section hr {
-    width: 396px;
-    height: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 38vh; 
+    width: 100%; 
+    margin-top: 2vh;
 }
 
 .welcome-section h1 {
     text-align: center;
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 2.4rem; 
+    font-weight: 300; 
+    margin-bottom: 3vh;
 }
 
 .welcome-section h2 {
     text-align: center;
-    font-size: 22px;
-    font-weight: 230;
+    font-size: 1.5rem; 
+    font-weight: 230; 
+    margin-bottom: 5vh;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    min-height: 38vh;
-}
-
-header h2 {
-    margin-bottom: 40px;
-}
-
-header img {
+.welcome-section img {
     width: 290px;
     height: auto;
 }
@@ -111,11 +98,12 @@ header img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 15vh;
+    padding: 0 35vh;
 }
 
 .digital-art img {
-    width: 1000px;
+    width: 100%;
     height: auto;
 }
 
@@ -124,10 +112,10 @@ header img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: auto;
+    width: 100%;
     height: 1100px;
     background: linear-gradient(to top, #00A0C3, #007090);
-    padding: 0px 207px;
+    padding: 0vh 20vh;
     text-align: center;
     margin-top: 0px;
 }
@@ -135,7 +123,7 @@ header img {
 .personal-description h2 {
     padding-top: 153px;
     color: #fff;
-    font-size: 40px;
+    font-size: 3rem;
 }
 
 .personal-description p {
@@ -154,14 +142,15 @@ header img {
 }
 
 .description-skills-section {
-    position: relative; /* makes the skills-container position relative to this container */
-    padding-bottom: 0px; /* creates space at the bottom of personal-description for skills-container */
-    height: 1890px;
+    position: relative; 
+    padding-bottom: 0px; 
+    height: 120em;
+    width: 100%;
 }
 
 .skills-container {
     position: relative;
-    top: -380px; /* Adjust this value to shift the boxes up */
+    top: -380px; 
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -187,20 +176,22 @@ header img {
     border-radius: 14px 0px 0px 14px;
     border-right-width: -0.1em;
     box-shadow: -10px 0px 25px -5px rgba(0, 0, 0, 0.288);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
 }
 
 .uiux-box {
     border-radius: 0px 14px 14px 0px;
     border-left-width: 0em;
     box-shadow: 10px 0px 25px -5px rgba(0, 0, 0, 0.288);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
 }
 
 .icon-container {
-    width: 100px; /* Size of circle */
-    height: 100px; /* Size of circle */
-    border-radius: 50%; /* Make it a circle */
-    position: relative; /* This allows absolute positioning for children */
-    background: #ff725e; /* Change to the color you want */
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    position: relative; 
+    background: #ff725e; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,16 +202,16 @@ header img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center the icon */
-    width: 60%; /* Adjust as needed */
+    transform: translate(-50%, -50%); 
+    width: 60%; 
     height: auto;
-    fill: rgb(46, 46, 46); /* The color of the icon */
+    fill: rgb(46, 46, 46); 
 }
 
 
 .frontend-box hr,
 .uiux-box hr {
-    border-color: black 1px; /* change color of horizontal lines */
+    border-color: black 1px; 
     width: 225px;
     margin-bottom: 60px;
 }
@@ -235,8 +226,8 @@ header img {
 
 .frontend-box ul,
 .uiux-box ul {
-    list-style-type: none; /* remove bullet points */
-    padding: 0; /* remove padding */
+    list-style-type: none; 
+    padding: 0; 
     line-height: 36px;
 }
 
@@ -265,23 +256,20 @@ header img {
     align-items: center;
     justify-content: center;
     background: linear-gradient(to top, #FFF, #009fc370, #FFF);
-    padding: 0px;
     height: 930px;
-    width: auto;
+    width: 100%;
+}
+
+.card-container {
+    width: 100%;
 }
 
 .education-section h2 {
     color: #FFF;
-    font-size: 46px;
+    font-size: 2.85rem;
     font-style: bold;
     margin-bottom: 20px;
     padding-top: 80px;
-}
-
-.education-section hr {
-    margin-bottom: 70px;
-    width: 790px;
-    height: 2px;
 }
 
 .card-container {
@@ -300,7 +288,7 @@ header img {
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
     position: relative;
-    perspective: 1000px; /* Required for the 3D effect on flip */
+    perspective: 1000px; 
 }
 
 .card .card-front,
@@ -308,7 +296,7 @@ header img {
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: opacity 0.6s ease; /* Animate the opacity property */
+    transition: opacity 0.6s ease; 
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -319,8 +307,8 @@ header img {
 
 .card .card-front {
     background: #ffffff;
-    opacity: 1;  /* Initially visible */
-    z-index: 2;  /* Initially on top */
+    opacity: 1;  
+    z-index: 2;  
 }
 
 .card .card-front img {
@@ -331,8 +319,8 @@ header img {
 /* CARD BACK */
 .card .card-back {
     background: #f8f8f8;
-    opacity: 0;  /* Initially hidden */
-    z-index: 1;  /* Initially below */
+    opacity: 0;  
+    z-index: 1;  
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -341,10 +329,12 @@ header img {
 
 #card1-gwu-cs .card-back {
     background: linear-gradient(to top, #a8ff78, #78ffd6);
+    background: linear-gradient(to bottom, #36d1dc, #5b86e5);
 }
 
 #card2-gwu-ixd .card-back {
     background: linear-gradient(to bottom, #b2fefa, #0ed2f7);
+    background: linear-gradient(to bottom, #36d1dc, #5b86e5);
 }
 
 #card3-udemy .card-back {
@@ -353,6 +343,8 @@ header img {
 
 #card4-coursera .card-back {
     background: linear-gradient(to bottom, #0cebeb, #20e3b2, #29ffc6);
+    background: linear-gradient(to top, #ff725e, #fbfbfb);
+    background: linear-gradient(to bottom, #36d1dc, #5b86e5);
 }
 
 .card-back h3 {
@@ -368,11 +360,11 @@ header img {
 }
 
 .card:hover .card-front {
-    opacity: 0;  /* Hide front side on hover */
+    opacity: 0;  
 }
 
 .card:hover .card-back {
-    opacity: 1;  /* Show back side on hover */
+    opacity: 1;  
 }
 
 .resume-button {
@@ -389,7 +381,7 @@ header img {
 
 .resume-button a {
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.1rem;
     font-style: bold;
     letter-spacing: 1px;
     color: #00A0C3;
@@ -440,28 +432,28 @@ header img {
 
 .cta-box h3 {
     color: #FFF;
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: bold;
     grid-column: 1;
 }
 
 .cta-box p {
     color: #FFF;
-    font-size: 15px;
+    font-size: 0.9rem;
     grid-column: 2;
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 .cta-box a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 100;
     color: #FFF;
     text-align: center;
-    display: flex; /* to align icon and text next to each other */
-    align-items: center; /* to vertically align icon and text */
+    display: flex; 
+    align-items: center; 
     padding: 17px 35px; 
-    gap: 8px; /* to add space between icon and text */
+    gap: 8px; 
 }
 
 .cta-box svg {
@@ -496,7 +488,7 @@ header img {
 }
 
 footer {
-    height: 720px;
+    height: 45em;
     background-color: #00A0C3;
     display: flex;
     flex-direction: column;
@@ -506,8 +498,21 @@ footer {
 }
 
 footer div {
-    margin-top: 180px;
-    margin-bottom: 60px;
+    margin-top: 11em;
+    margin-bottom: 4em;
+}
+
+#footer-logo {
+    align-self: center;
+}
+
+#logo2-wrapper {
+    scale: 1.7;
+}
+
+#logo2 {
+    height: 100%;
+    width: auto;
 }
 
 .social-links-container {
@@ -521,7 +526,6 @@ footer div {
     border: 1.7px solid #FFF; 
     background-color: #2F2F2F; 
     border-radius: 50px; 
-    padding: 14px; 
     margin: 0px 15px;
     display: flex;
     align-items: center;
@@ -556,9 +560,9 @@ a.social-links:link, a.social-links:visited, a.social-links:hover, a.social-link
 
 footer h4 {
     color: #FFF;
-    font-size: 17px;
+    font-size: 1.06rem;
     font-weight: lighter;
-    width: 300px;
+    width: 18em;
     text-align: center;
 }
 
@@ -570,9 +574,365 @@ footer h4 {
     justify-content: center;
 } 
 
-/* Breakpoints: 
-        - Mobile (375px) 
-        - Tablet (768px) 
-        - Desktop (1024px) 
-*/
+
+
+/* LARGE MOBILE */ 
+@media screen and (max-width: 425px) {
+
+    #logo {
+        width: 25%; 
+        padding: 0;
+        min-width: 90px; 
+    }
+
+    #logo img {
+        min-width: 90px; 
+    }
+
+    #projects-nav {
+        display: none; 
+    }
+
+    #navigation h3 a {
+        font-size: 1.0rem; 
+        padding: 0.5em 1.1em; 
+        border: solid #00A0C3 0.1em;
+    }
+
+    #contact-nav {
+        border-radius: 30px; 
+
+    }
+
+    .welcome-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .welcome-section h1 {
+        text-align: center;
+        font-size: 1.3rem; 
+        font-weight: 300; 
+        max-width: 88%;
+    }
+    
+    .welcome-section h2 {
+        text-align: center;
+        font-size: 0.9rem; 
+        font-weight: 280; 
+        max-width: 80%;
+        margin-top: 1vh;
+    }
+
+    .welcome-section img {
+        width: 38%;
+        height: auto;
+    }
+
+    .digital-art {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12vh;
+        padding: 0 5vh;
+    }
+    
+    .digital-art img {
+        width: 100%;
+        height: auto;
+    }
+
+    .personal-description {
+        width: 100%;
+        height: 100vh;
+        padding: 0vh 0vh;
+        text-align: center;
+        margin-top: 0px;
+    } 
+    
+    .personal-description h2 {
+        padding-top: 2em;
+        color: #fff;
+        font-size: 1.9rem; 
+        width: 100%;
+    }
+    
+    .personal-description p {
+        padding: 1.5em 1.5em 1.5em 1.5em; 
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 10;
+        line-height: 200%;
+    }
+    
+    .personal-description hr {
+        width: 40%;
+        margin-top: 1.4em;
+        color: #fff;
+    }
+    
+    .description-skills-section {
+        position: relative; 
+        padding-bottom: 0px; 
+    }
+
+    .skills-container {
+        position: relative;
+        top: -6vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 134em;
+    }
+    
+    .frontend-box,
+    .uiux-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        align-self: center;
+        border: 1px solid rgba(124, 124, 124, 0.2);
+        padding: 1.2em; 
+        width: 90%; 
+        height: fit-content;
+        text-align: center; 
+        background-color: #FFF;
+        line-height: 2em; 
+    }
+    
+    .frontend-box {
+        border-radius: 14px 14px 14px 14px;
+        box-shadow: 0 0 25px -5px rgba(0, 0, 0, 0.288);
+        margin-bottom: 3vh;
+    }
+    
+    .uiux-box {
+        border-radius: 14px 14px 14px 14px;
+        box-shadow: 0 0 25px -5px rgba(0, 0, 0, 0.288);
+        margin-bottom: 3vh;
+    }
+    
+    .icon-container {
+        width: 5.8em; 
+        height: 5.8em; 
+        min-height: 5.8em;
+        border-radius: 50%; 
+        position: relative; 
+        background: #ff725e; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2em 0em; 
+    }
+    
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        width: 55%; 
+        height: auto;
+        fill: rgb(46, 46, 46); 
+    }
+    
+    
+    .frontend-box hr,
+    .uiux-box hr {
+        border-color: black 1px; 
+        width: 9em;
+        margin: 2.9em 0;
+    }
+    
+    .frontend-box ul,
+    .uiux-box ul {
+        list-style-type: none; 
+        line-height: 2.25em;
+    }
+
+    .frontend-box ul :nth-child(10),
+    .uiux-box ul :nth-child(10){
+        margin-bottom: 2em;
+    }
+    
+    .frontend-box h4, 
+    .uiux-box h4 {
+        color: #f4513c; 
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+    .frontend-box h3, 
+    .uiux-box h3 {
+        padding-bottom: 1.5em;
+    }
+    
+    .frontend-box p, 
+    .uiux-box p {
+        padding: 0 2.8em;
+    }
+
+    #codepen-section {
+        margin-top: 146vh !important;
+    }
+
+    .education-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to top, #FFF, #009fc370, #FFF);
+        height: 70em;
+        width: 100%;
+        margin-top: 30vh;
+    }
+    
+    .education-section h2 {
+        color: #FFF;
+        font-size: 2.6rem;
+        font-style: bold;
+        margin-bottom: 1.25em;
+        padding-top: 5em;
+    }
+    
+    
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(4, auto);
+        grid-row-gap: 3em; 
+        width: 100%;
+    }
+    
+    .card {
+        background: #ffffff;
+        width: 90%; 
+        height: 244px; 
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
+        position: relative;
+        perspective: 1000px; 
+    }
+    
+    .card .card-front,
+    .card .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.6s ease; 
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    .card .card-front {
+        background: #ffffff;
+        opacity: 1;  
+        z-index: 2;  
+    }
+    
+    .card .card-front img {
+        width: 10em;
+        height: auto;
+    }
+    
+    
+    .card .card-back {
+        background: #f8f8f8;
+        opacity: 0; 
+        z-index: 1;  
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resume-button {
+        margin: 3.9em 0;
+        border: 2px solid #00A0C3;
+    }
+    
+    .resume-button a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-style: bold;
+        letter-spacing: 1px;
+        color: #00A0C3;
+        display: flex; 
+        align-items: center; 
+        padding: 0.8em 1.4em; 
+        gap: 0.8em; 
+    }
+    
+    .resume-button svg {
+        fill: #00A0C3; 
+        width: 1em;
+    }
+
+    
+    .bottom-container {
+        margin-top: 15em;
+    }
+
+    .cta-box {
+        height: 17em;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        grid-template-columns: none;
+        margin-bottom: 4em;
+        bottom: 440px; 
+    }
+
+    .cta-box h3 {
+        font-size: 1.4rem;
+        grid-column: unset; 
+    }
+
+    .cta-box p {
+        font-weight: lighter;
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+        padding: 20px 10px; 
+        grid-column: unset;
+    }
+
+    .cta-box a {
+        font-size: 0.9rem;
+        padding: 13px 20px; 
+        padding: 0.8em 1.4em; 
+    }
+
+    .cta-box svg {
+        width: 1em; 
+    }
+
+    .cta-box button  {
+        grid-column: unset; 
+    }
+
+    footer {
+        height: 40em;
+    }
+
+    .social-links-container {
+        margin: 2em 0;
+    }
+
+    .social-links {
+        margin: 0px 15px;
+        width: 41px;
+        height: 41px;
+    }
+}
 
