@@ -1,4 +1,4 @@
-/* GLOBAL */
+/* GLOBAL */ 
 * {
     box-sizing: border-box;
     margin: 0;
@@ -59,7 +59,7 @@ body {
 }
 
 #projects-nav {
-    color: #000
+    color: #000;
 }
 
 /* INITIAL AREA */ 
@@ -227,7 +227,6 @@ body {
 .frontend-box ul,
 .uiux-box ul {
     list-style-type: none; 
-    padding: 0; 
     line-height: 36px;
 }
 
@@ -301,7 +300,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -427,7 +425,6 @@ body {
     gap: 20px;
     padding: 0 30px;
     bottom: 600px;
-
 }
 
 .cta-box h3 {
@@ -464,6 +461,10 @@ body {
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     grid-column: 3;
     justify-self: center;
+    border: 2px solid #16ecda; 
+    border-radius: 30px;
+    background-color: #002C35;
+    letter-spacing: 1px;
 }
 
 .cta-box button:hover {
@@ -478,13 +479,6 @@ body {
 
 .cta-box button a:hover svg {
     fill: #002C35;
-}
-
-.cta-box button {
-    border: 2px solid #16ecda;
-    border-radius: 30px;
-    background-color: #002C35;
-    letter-spacing: 1px;
 }
 
 footer {
@@ -560,7 +554,7 @@ a.social-links:link, a.social-links:visited, a.social-links:hover, a.social-link
 
 footer h4 {
     color: #FFF;
-    font-size: 1.06rem;
+    font-size: 0.9rem;
     font-weight: lighter;
     width: 18em;
     text-align: center;
@@ -577,7 +571,11 @@ footer h4 {
 
 
 /* LARGE MOBILE */ 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 375px) {
+
+    .navbar {
+        height: 7em;
+    }
 
     #logo {
         width: 25%; 
@@ -594,14 +592,13 @@ footer h4 {
     }
 
     #navigation h3 a {
-        font-size: 1.0rem; 
-        padding: 0.5em 1.1em; 
-        border: solid #00A0C3 0.1em;
+        font-size: 0.9rem; 
+        padding: 0.35em 0.95em; 
+        border: solid #00A0C3 0.09rem;
     }
 
     #contact-nav {
         border-radius: 30px; 
-
     }
 
     .welcome-section {
@@ -648,7 +645,7 @@ footer h4 {
 
     .personal-description {
         width: 100%;
-        height: 100vh;
+        height: 47.5em;
         padding: 0vh 0vh;
         text-align: center;
         margin-top: 0px;
@@ -657,7 +654,7 @@ footer h4 {
     .personal-description h2 {
         padding-top: 2em;
         color: #fff;
-        font-size: 1.9rem; 
+        font-size: 1.7rem; 
         width: 100%;
     }
     
@@ -777,7 +774,7 @@ footer h4 {
     }
 
     #codepen-section {
-        margin-top: 146vh !important;
+        margin-top: 185vh !important;
     }
 
     .education-section {
@@ -875,7 +872,6 @@ footer h4 {
         width: 1em;
     }
 
-    
     .bottom-container {
         margin-top: 15em;
     }
@@ -903,13 +899,12 @@ footer h4 {
         font-weight: lighter;
         font-size: 0.9rem;
         line-height: 1.6rem;
-        padding: 20px 10px; 
+        padding: 10px 10px; 
         grid-column: unset;
     }
 
     .cta-box a {
         font-size: 0.9rem;
-        padding: 13px 20px; 
         padding: 0.8em 1.4em; 
     }
 
@@ -926,13 +921,13 @@ footer h4 {
     }
 
     .social-links-container {
-        margin: 2em 0;
+        margin: 2.6em 2em;
     }
 
     .social-links {
-        margin: 0px 15px;
-        width: 41px;
-        height: 41px;
+        margin: 0em 0.62em;
+        width: 2.37em;
+        height: 2.37em;
     }
 }
 
