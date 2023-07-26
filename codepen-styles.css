@@ -12,7 +12,7 @@
 
 #codepen-section body {
     font-family: 'Manrope', sans-serif;
-  font-size: 16px;
+    font-size: 16px;
 }
 
 #codepen-section .clear {
@@ -71,7 +71,7 @@
 /* title style */
 #codepen-section .line-title {
   position: relative;
-  width: 400px;
+  width: 60%;
 }
 
 #codepen-section .line-title::before,
@@ -96,7 +96,7 @@
 
 /* Middle section CSS Start */
 #codepen-section .game-section {
-  padding: 60px 50px;
+  padding: 3em 1em;
 }
 
 #codepen-section .game-section .owl-stage {
@@ -241,10 +241,10 @@
     }
   }
   
-  @media (max-width: 767px) {
+  @media (min-width: 768px) {
 
     #codepen-section  {
-        width: 90%;
+        width: 87%;
     }
 
     #codepen-section body {

@@ -53,7 +53,9 @@ body {
     margin-right: 1.7em;
 }
 
-#contact-nav:hover {
+#contact-nav:hover, 
+#contact-nav:focus,
+#contact-nav:active {
     background-color: #00A0C3;
     color: #FFF;
     border-color: #00A0C3;
@@ -118,15 +120,17 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 120vh;
+    padding-bottom: 60px;
     background: linear-gradient(to top, #00A0C3, #007090);
     text-align: center;
+    padding-bottom: 35%;
 } 
 
 .personal-description h2 {
     padding-top: 2em;
     color: #fff;
     font-size: 1.9rem; 
+    font-weight: 300;
     width: 100%; /* check if this line is necessary */
 }
 
@@ -141,25 +145,22 @@ body {
 .personal-description hr {
     width: 40%;
     margin-top: 1.4em;
-    margin-bottom: 1.25em; 
+    margin-bottom: 1.4em; 
     color: #fff;
 }
 
 .description-skills-section {
     position: relative; 
     padding-bottom: 0px; 
-    height: 120em;
     width: 100%; /* check if this line is necessary */ 
 }
 
 .skills-container {
     position: relative;
-    top: -6vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: 134em;
 }
 
 .frontend-box,
@@ -177,11 +178,13 @@ body {
     line-height: 2em; 
     border-radius: 14px 14px 14px 14px;
     box-shadow: 0 0 25px -5px rgba(0, 0, 0, 0.288);
-    margin-bottom: 3vh;
+    top: -160px;
 }
 
 .frontend-box {
     margin-top: 3.7em;
+    position: relative;
+    margin-bottom: 35px;
 }
 
 .icon-container {
@@ -211,19 +214,14 @@ body {
 .frontend-box hr,
 .uiux-box hr {
     border-color: black 1px; 
-    width: 9em;
+    width: 30%;
     margin: 2.9em 0;
 }
 
-.frontend-box ul,
-.uiux-box ul {
-    list-style-type: none; 
-    line-height: 2.25em;
-}
-
-.frontend-box ul :nth-child(10),
-.uiux-box ul :nth-child(10){
-    margin-bottom: 2em;
+.frontend-box h3, 
+.uiux-box h3 {
+    padding-bottom: 1.5em;
+    font-size: 1.16rem;
 }
 
 .frontend-box h4, 
@@ -233,19 +231,30 @@ body {
     font-size: 1rem;
 }
 
-.frontend-box h3, 
-.uiux-box h3 {
-    padding-bottom: 1.5em;
-}
-
 .frontend-box p, 
 .uiux-box p {
     padding: 0em 2.8em;
+    font-size: 1rem;
+}
+
+.frontend-box ul,
+.uiux-box ul {
+    list-style-type: none; 
+    line-height: 2.25em;
+    font-size: 1rem;
+}
+
+.frontend-box ul :nth-child(10),
+.uiux-box ul :nth-child(10){
+    margin-bottom: 2em;
 }
 
 /* PROJECTS SECTION */ 
 #codepen-section {
-    margin-top: 185vh !important;
+    margin-top: -50px !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06), 0 4px 8px 0 rgba(0, 0, 0, 0.06), 0 10px 20px 0 rgba(0, 0, 0, 0.06), 0 14px 28px 0 rgba(0, 0, 0, 0.06);
+    border: 3px solid #c3c3c351 !important;
+    width: 87% !important;
 }
 
 /* EDUCATION SECTION */ 
@@ -310,6 +319,16 @@ body {
     z-index: 2;  
 }
 
+.card .card-icon {
+    position: absolute;
+    top: 8%;  
+    left: 6%;   
+    fill: rgba(153, 153, 153, 0.18);     
+    height: 1rem;   
+    width: 1rem;    
+    z-index: 4;
+}
+
 .card .card-front img {
     width: 10em;
     height: auto;
@@ -354,6 +373,14 @@ body {
     opacity: 1;  
 }
 
+.flipped .card-front {
+    opacity: 0;
+}
+
+.flipped .card-back {
+    opacity: 1;
+}
+
 .resume-button {
     margin: 3.9em 0;
     border: 2px solid #00A0C3;
@@ -369,7 +396,7 @@ body {
     text-decoration: none;
     font-size: 0.9rem;
     font-style: bold;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     color: #00A0C3;
     display: flex; 
     align-items: center; 
@@ -382,16 +409,22 @@ body {
     width: 1em;
 }
 
-.resume-button:hover {
+.resume-button:hover,
+.resume-button:focus,
+.resume-button:active {
     background-color: #00A0C3;
     border-color: #00A0C3;
 }
 
-.resume-button:hover a {
+.resume-button:hover a,
+.resume-button:focus a,
+.resume-button:active a {
     color: #FFF;
 }
 
-.resume-button:hover svg {
+.resume-button:hover svg,
+.resume-button:focus svg,
+.resume-button:active svg {
     fill: #FFF;
 }
 
@@ -409,8 +442,8 @@ body {
     position: absolute;
     background-color: #002C35;
     border: 1px solid #002C35;
-    border-radius: 1.87em;
-    height: 17em;
+    border-radius: 1.15em;
+    height: 19em;
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -422,7 +455,7 @@ body {
     z-index: 3; 
     padding: 1.25em;
     grid-template-columns: none;
-    margin-bottom: 4em;
+    margin-bottom: 2.5em;
     bottom: 440px; 
     gap: 1.25em; 
 }
@@ -432,6 +465,7 @@ body {
     font-size: 1.4rem;
     font-weight: bold;
     grid-column: unset; 
+    margin-top: 0.5em;
 }
 
 .cta-box p {
@@ -445,15 +479,15 @@ body {
 
 .cta-box a {
     text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: 100;
-    letter-spacing: 1px;
+    font-size: 0.96rem;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
     color: #FFF;
     text-align: center;
     display: flex; 
     align-items: center; 
-    padding: 1em 1.6em; 
-    gap: 0.5em; 
+    padding: 1em 2.5em; 
+    gap: 0.8em; 
 }
 
 .cta-box svg {
@@ -461,25 +495,32 @@ body {
 }
 
 .cta-box button  {
-    border: 2px solid #16ecda; 
+    border: 2px solid #16ecc5; 
     border-radius: 30px;
     background-color: #002C35;
     grid-column: unset; 
     justify-self: center;
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    margin-bottom: 0.5em;
 }
 
-.cta-box button:hover {
+.cta-box button:hover,
+.cta-box button:focus,
+.cta-box button:active {
     background-color: #FFF;
     border-color: #FFF;
 }
 
-.cta-box button a:hover {
+.cta-box button a:hover,
+.cta-box button a:focus,
+.cta-box button a:active {
     color: #002C35;
     font: bold;
 }
 
-.cta-box button a:hover svg {
+.cta-box button a:hover svg,
+.cta-box button a:focus svg,
+.cta-box button a:active svg{
     fill: #002C35;
 }
 
@@ -539,17 +580,21 @@ footer div {
     scale: 1.1;
 }
 
-.social-links:hover {
+.social-links:hover,
+.social-links:focus,
+.social-links:active {
     transform: scale(1.1);
     background-color: #FFF;
 }
 
-.social-links:hover svg {
+.social-links:hover svg,
+.social-links:focus svg,
+.social-links:active svg{
     transform: scale(1.1);
     fill: #2F2F2F;
 }
 
-a.social-links:link, a.social-links:visited, a.social-links:hover, a.social-links:active {
+a.social-links:link, a.social-links:visited, a.social-links:hover, a.social-links:focus, a.social-links:active {
     text-decoration: none;
 }
 
@@ -572,15 +617,177 @@ footer h4 {
         font-size: 1rem;
     }
 
-    .skills-container {
-        top: calc(-6vh - 130px); 
-    } 
+    #codepen-section {
+        width: 87% !important;
+    }
+
+    .card .card-icon {
+        top: 9%;  
+        left: 6%;   
+        height: 1.1rem;   
+        width: 1.1rem;    
+    }
+
+    .frontend-box, 
+    .uiux-box {
+        width: 87%;
+    }
+
+    .card {
+        width: 87%;
+    }
+
+    .cta-box {
+        width: 87%;
+    }
+
+    .cta-box a {
+        font-size: 0.96rem;
+        padding: 0.9em 2.5em; 
+    }
+
+    .card-back h3 {
+        padding: 0 1em;
+        padding-bottom: 0.2em;
+    }
+
+    .card:hover .card-front {
+        opacity: 0;
+    }
+
+    .card:hover .card-back {
+        opacity: 1;
+    }
+
+    .social-links-container {
+        margin: 2.3em 0em;
+    }
 }
 
 /* Styles for tablets */
 @media screen and (min-width: 768px) {
-    body {
-        /* ... */
+    
+    .navbar {
+        padding-top: 3em;
+    }
+
+    #logo {
+        width: 20%; 
+    }
+
+    #navigation h3 a {
+        font-size: 1.5rem;
+    }
+
+    #contact-nav {
+        border: solid #00A0C3 0.1rem;
+    }
+
+    .welcome-section {
+        margin-top: 70px;
+    }
+
+    .welcome-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .welcome-section h2 {
+        font-size: 1.4rem;
+    } 
+
+    .personal-description h2 {
+        font-size: 2.3rem;
+    }
+
+    .personal-description p {
+        font-size: 1.6rem;
+    }
+
+    .icon-container {
+        width: 6em; 
+        height: 6em; 
+    }
+
+    .icon {
+        width: 60%;
+    }
+
+    .frontend-box,
+    .uiux-box {
+        top: -255px;
+    }
+
+    .frontend-box h3,
+    .uiux-box h3 { 
+        font-size: 1.3rem;
+    }
+
+    .frontend-box h4, 
+    .uiux-box h4 {
+        font-size: 1.17rem;
+    }
+
+    .frontend-box p, 
+    .uiux-box p {
+        font-size: 1.17rem;
+    }
+
+    .frontend-box ul,
+    .uiux-box ul {
+        font-size: 1.17rem;
+    }
+
+    #codepen-section {
+        margin-top: -75px !important;
+        width: 87%;
+    }
+
+    .card .card-icon {
+        top: 10%;  
+        left: 4%;   
+        height: 1.4rem;   
+        width: 1.4rem;    
+    }
+
+    .resume-button {
+        border-radius: 30px;
+    }
+
+    .resume-button a {
+        font-size: 1.1rem;
+        padding: 0.9em 2.5em;
+    }
+
+    .cta-box {
+        margin-top: 6em;
+    }
+
+    .cta-box h3 {
+        font-size: 1.6rem;
+    }
+
+    .cta-box p {
+        font-size: 1.1rem;
+        padding: 1em 0.62em;
+    }
+
+    .cta-box a {
+        font-size: 1.1rem;
+    }
+
+    .cta-box svg {
+        width: 1.2em;
+    }
+
+    footer h4 {
+        font-size: 1.2rem;
+        width: 40%;
+    }
+
+    .social-links {
+        width: 2.57em;
+        height: 2.57em;
+        margin: 0 1em;
     }
 }
 
