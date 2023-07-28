@@ -161,6 +161,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 53px; /* this margin compensates for the top attribute on the frontend box */ 
 }
 
 .frontend-box,
@@ -266,7 +267,7 @@ body {
     background: linear-gradient(to top, #FFF, #009fc370, #FFF);
     height: 70em;
     width: 100%; /* check if this line is necessary */ 
-    margin-top: 30vh;
+    margin-top: 250px; /* restyle this on breakpoints*/
 }
 
 .card-container {
@@ -322,7 +323,7 @@ body {
 .card .card-icon {
     position: absolute;
     top: 8%;  
-    left: 6%;   
+    left: 6%; 
     fill: rgba(153, 153, 153, 0.18);     
     height: 1rem;   
     width: 1rem;    
@@ -793,21 +794,199 @@ footer h4 {
 
 /* Styles for small laptops */
 @media screen and (min-width: 992px) {
-    body {
-        /* ... */
+    
+    .navbar {
+        padding-top: 5em;
     }
-}
+
+    #navigation h3 a {
+        font-size: 1.65rem;
+    }
+
+    #projects-nav {
+        display: contents;
+    }
+
+    #navigation {
+        gap: 1.5em; 
+    }
+
+    .welcome-section {
+        margin-top: 100px;
+    }
+
+    .welcome-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .welcome-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .welcome-section img {
+        width: 35%;
+    }
+
+    .personal-description h2 {
+        font-size: 2.6rem;
+    }
+
+    .personal-description p {
+        font-size: 1.9rem;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
+        width: 90%;
+        margin: auto;
+        top: -285px;
+    }
+
+    .frontend-box,
+    .uiux-box {
+        width: 100%;
+        min-height: 0;
+        position: static;
+        min-height: 100%;
+        /* height: 1300px; */
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    .frontend-box {
+        border-radius: 14px 0px 0px 14px;
+        border-right-width: -0.1em;
+        box-shadow: -10px 0px 25px -5px rgba(0, 0, 0, 0.288);
+    }
+    
+    .uiux-box {
+        border-radius: 0px 14px 14px 0px;
+        border-left-width: 0em;
+        box-shadow: 10px 0px 25px -5px rgba(0, 0, 0, 0.288);
+    }
+
+    .icon-container {
+        width: 6.5em;
+        height: 6.5em;
+    }
+
+    #codepen-section {
+        top: -70px;
+    }
+
+    .education-section {
+        margin-top: 80px;
+        height: fit-content;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: repeat(2, auto);
+        width: 90%;
+    }
+
+    .resume-button {
+        margin-top: 5em;
+    }
+
+    .cta-box {
+        bottom: 590px;
+    }
+
+    .cta-box h3 {
+        font-size: 1.8rem;
+    }
+
+    .cta-box p {
+        font-size: 1.3rem;
+        padding: 1em 0.62em;
+    }
+
+    .cta-box a {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        height: 50em;
+    }
+
+    #logo2-wrapper{
+        scale: 2;
+    }
+
+    #footer-logo {
+        /* margin: 3em 0; */
+        margin-top: 3em;
+        margin-bottom: 1.5em;
+    }
+
+    footer h4 {
+        font-size: 1.5rem;
+        width: 40%;
+    }
+
+    .social-links-container {
+        margin: 2.9em 0;
+    }
+
+    .social-links {
+        width: 3.4em;
+        height: 3.4em;
+        margin: 0 1.2em;
+    } 
+
+    .social-links svg {
+        scale: 0.9;
+    }
+} 
 
 /* Styles for desktops */
 @media screen and (min-width: 1200px) {
-    body {
-        /* ... */
+    
+    .navbar {
+        padding-top: 6em;
+    }
+
+    #navigation h3 a {
+        font-size: 1.7rem;
+    }
+
+    #navigation {
+        gap: 1.6em; 
+    }
+
+    .welcome-section {
+        margin-top: 120px;
+    }
+
+    .welcome-section h1 {
+        font-size: 2.3rem;
+    }
+
+    .welcome-section h2 {
+        font-size: 1.9rem;
+    }
+
+    .personal-description h2 {
+        font-size: 2.8rem;
+    }
+
+    .personal-description p {
+        font-size: 2.1rem;
+        padding: 1.6em;
+    }
+
+    .skills-container {
+        top: -335px;
     }
 }
 
-/* Styles for larger desktops */
+/* Styles for larger laptops */
 @media screen and (min-width: 1440px) {
     body {
         /* ... */
     }
 }
+
