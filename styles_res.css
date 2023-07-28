@@ -63,7 +63,7 @@ body {
 
 #projects-nav {
     display: none; 
-    /* color: #000; (add when viewport is larger than approx 425px */ 
+    color: #000; 
 }
 
 /* INITIAL AREA */ 
@@ -493,6 +493,7 @@ body {
 
 .cta-box svg {
     width: 1em; 
+    padding-bottom: 2px;
 }
 
 .cta-box button  {
@@ -870,6 +871,7 @@ footer h4 {
     .icon-container {
         width: 6.5em;
         height: 6.5em;
+        margin-bottom: 3em;
     }
 
     #codepen-section {
@@ -949,6 +951,10 @@ footer h4 {
         padding-top: 6em;
     }
 
+    #logo {
+        width: 18%;
+    }
+
     #navigation h3 a {
         font-size: 1.7rem;
     }
@@ -981,12 +987,474 @@ footer h4 {
     .skills-container {
         top: -335px;
     }
+
+    .frontend-box h3, 
+    .uiux-box h3 {
+        font-size: 1.7rem;
+    }
+
+    .frontend-box p, 
+    .uiux-box p {
+        font-size: 1.3rem;
+        line-height: 1.6em;
+    }
+
+    .frontend-box h4, 
+    .uiux-box h4 {
+        font-size: 1.5rem;
+    }
+
+    .frontend-box ul,
+    .uiux-box ul {
+        font-size: 1.5rem;
+    }
+
+    .icon-container {
+        width: 6.7em;
+        height: 6.7em;
+        margin: 3em 0;
+    }
+        
+    #codepen-section {
+        height: 40em !important;
+        margin-bottom: 7em !important;
+        width: 90% !important;
+    }
+
+    #codepen-section .game-section .item {
+        width: 350px !important;
+        height: 430px !important;
+    }
+
+    #codepen-section h2 {
+        font-size: 1.5rem !important;
+        gap: 2 !important;
+    }
+
+    #codepen-section .line-title {
+        width: 40% !important;
+        margin-left: 20px !important;
+    }
+
+    .education-section {
+        margin-top: 1em;
+    }
+
+    .card {
+        height: 16em;
+        width: 90%;
+    }
+
+    .card-icon {
+        top: 9%;
+        left: 4.7%;
+    }
+
+    .resume-button {
+        border-radius: 34px;
+    }
+
+    .resume-button a {
+        padding: 1em 2.6em;
+        font-size: 1.15rem;
+    }
+
+    .social-links-container {
+        margin: 3.2em 0;
+    }
 }
 
 /* Styles for larger laptops */
 @media screen and (min-width: 1440px) {
-    body {
-        /* ... */
+
+    .navbar {
+        padding-top: 8em;
+    }
+
+    #logo {
+        width: 19%;
+    }
+
+    #navigation h3 a {
+        font-size: 2.1rem;
+    }
+
+    #navigation {
+        gap: 1.7em; 
+    }
+
+    .welcome-section {
+        margin-top: 160px;
+    }
+
+    .welcome-section h1 {
+        font-size: 2.8rem;
+    }
+
+    .welcome-section h2 {
+        font-size: 2.3rem;
+        margin-bottom: 2.4em;
+    }
+
+    .personal-description h2 {
+        font-size: 3.1rem;
+    }
+
+    .personal-description p {
+        font-size: 2.4rem;
+        padding: 1.7em;
+    }
+
+    .skills-container {
+        top: -400px;
+    }
+
+    .frontend-box h3, 
+    .uiux-box h3 {
+        font-size: 1.9rem;
+    }
+
+    .frontend-box p, 
+    .uiux-box p {
+        font-size: 1.5rem;
+        line-height: 1.7em;
+    }
+
+    .frontend-box h4, 
+    .uiux-box h4 {
+        font-size: 1.7rem;
+    }
+
+    .frontend-box ul,
+    .uiux-box ul {
+        font-size: 1.7rem;
+    }
+
+    .icon-container {
+        width: 6.9em;
+        height: 6.9em;
+        margin: 3em 0;
+    }
+        
+    #codepen-section {
+        height: 50em !important;
+        margin-bottom: 7em !important;
+        width: 90% !important;
+    }
+
+    #codepen-section .game-section .item {
+        width: 450px !important;
+        height: 530px !important;
+    }
+
+    #codepen-section .game-section .item-desc { 
+        padding: 0 24px 18px !important;
+    }
+
+    #codepen-section h2 {
+        font-size: 1.8rem !important;
+        margin: 40px 0 !important;
+    }
+
+    #codepen-section h3 {
+        font-size: 32px !important;
+    }
+
+    #codepen-section p {
+        font-size: 22px !important;
+    }
+
+    #codepen-section .line-title {
+        width: 40% !important;
+        margin-left: 20px !important;
+    }
+
+    .education-section {
+        margin-top: 1em;
+    }
+
+    .card {
+        height: 19em;
+        width: 90%;
+    }
+
+    .card .card-icon {
+        top: 9.5%;
+        left: 5%;
+    }
+
+    .card .card-front img {
+        width: 14em;
+        height: auto;
+    }
+
+    .resume-button {
+        border-radius: 38px;
+        margin-top: 7em;
+    }
+
+    .resume-button a {
+        padding: 1em 2.6em;
+        font-size: 1.4rem;
+    }
+
+    .cta-box {
+        display: grid;
+        grid-template-columns: 0.4fr 0.4fr 0.4fr;
+        bottom: 640px;
+    }
+
+    .cta-box h3 {
+        margin: 0 1em;
+        font-size: 2.2rem;
+        line-height: 3.3rem;
+    }
+
+    .cta-box p {
+        font-size: 1.5rem;
+        line-height: 1.6em;
+    }
+
+    .cta-box button {
+        border-radius: 38px;
+        margin: 0 1.3em;
+    }
+
+    .cta-box a {
+        font-size: 1.6rem;
+        padding: 0.9em 1.7em;
+    }
+    
+    .cta-box svg {
+        width: 1.05em;
+        height: auto;
+    }
+
+    footer {
+        height: 55em;
+    }
+
+    #logo2-wrapper {
+        scale: 2.5;
+    }
+
+    footer h4 {
+        font-size: 1.8rem;
+        width: 35%
+    }
+    .social-links-container {
+        margin: 3.2em 0;
+        width: 40%;
+    }
+
+    .social-links {
+        width: 4em;
+        height: 4em;
+        margin: 0 1.4em;
+    } 
+
+    .social-links svg {
+        scale: 0.9;
     }
 }
+/* 
+@media  only screen and (min-device-pixel-ratio: 2), 
+    only screen and (min-resolution: 192dpi) {
+  
+    html {
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        transform: scale(0.5);
+    }
 
+    .navbar {
+        padding-top: 8em;
+    }
+
+    #logo {
+        width: 19%;
+    }
+
+    #navigation h3 a {
+        font-size: 2.1rem;
+    }
+
+    #navigation {
+        gap: 1.7em; 
+    }
+
+    .welcome-section {
+        margin-top: 160px;
+    }
+
+    .welcome-section h1 {
+        font-size: 2.8rem;
+    }
+
+    .welcome-section h2 {
+        font-size: 2.3rem;
+        margin-bottom: 2.4em;
+    }
+
+    .personal-description h2 {
+        font-size: 3.1rem;
+    }
+
+    .personal-description p {
+        font-size: 2.4rem;
+        padding: 1.7em;
+    }
+
+    .skills-container {
+        top: -400px;
+    }
+
+    .frontend-box h3, 
+    .uiux-box h3 {
+        font-size: 1.9rem;
+    }
+
+    .frontend-box p, 
+    .uiux-box p {
+        font-size: 1.5rem;
+        line-height: 1.7em;
+    }
+
+    .frontend-box h4, 
+    .uiux-box h4 {
+        font-size: 1.7rem;
+    }
+
+    .frontend-box ul,
+    .uiux-box ul {
+        font-size: 1.7rem;
+    }
+
+    .icon-container {
+        width: 6.9em;
+        height: 6.9em;
+        margin: 3em 0;
+    }
+        
+    #codepen-section {
+        height: 50em !important;
+        margin-bottom: 7em !important;
+        width: 90% !important;
+    }
+
+    #codepen-section .game-section .item {
+        width: 450px !important;
+        height: 530px !important;
+    }
+
+    #codepen-section .game-section .item-desc { 
+        padding: 0 24px 18px !important;
+    }
+
+    #codepen-section h2 {
+        font-size: 1.8rem !important;
+        margin: 40px 0 !important;
+    }
+
+    #codepen-section h3 {
+        font-size: 32px !important;
+    }
+
+    #codepen-section p {
+        font-size: 22px !important;
+    }
+
+    #codepen-section .line-title {
+        width: 40% !important;
+        margin-left: 20px !important;
+    }
+
+    .education-section {
+        margin-top: 1em;
+    }
+
+    .card {
+        height: 19em;
+        width: 90%;
+    }
+
+    .card .card-icon {
+        top: 9.5%;
+        left: 5%;
+    }
+
+    .card .card-front img {
+        width: 14em;
+        height: auto;
+    }
+
+    .resume-button {
+        border-radius: 38px;
+        margin-top: 7em;
+    }
+
+    .resume-button a {
+        padding: 1em 2.6em;
+        font-size: 1.4rem;
+    }
+
+    .cta-box {
+        display: grid;
+        grid-template-columns: 0.4fr 0.4fr 0.4fr;
+        bottom: 640px;
+    }
+
+    .cta-box h3 {
+        margin: 0 1em;
+        font-size: 2.2rem;
+        line-height: 3.3rem;
+    }
+
+    .cta-box p {
+        font-size: 1.5rem;
+        line-height: 1.6em;
+    }
+
+    .cta-box button {
+        border-radius: 38px;
+        margin: 0 1.3em;
+    }
+
+    .cta-box a {
+        font-size: 1.6rem;
+        padding: 0.9em 1.7em;
+    }
+
+    .cta-box svg {
+        width: 1.05em;
+        height: auto;
+    }
+
+    footer {
+        height: 55em;
+    }
+
+    #logo2-wrapper {
+        scale: 2.5;
+    }
+
+    footer h4 {
+        font-size: 1.8rem;
+        width: 35%
+    }
+    .social-links-container {
+        margin: 3.2em 0;
+        width: 40%;
+    }
+
+    .social-links {
+        width: 4em;
+        height: 4em;
+        margin: 0 1.4em;
+    } 
+
+    .social-links svg {
+        scale: 0.9;
+    }
+} */
