@@ -253,8 +253,7 @@ body {
 /* PROJECTS SECTION */ 
 #codepen-section {
     margin-top: -50px !important;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06), 0 4px 8px 0 rgba(0, 0, 0, 0.06), 0 10px 20px 0 rgba(0, 0, 0, 0.06), 0 14px 28px 0 rgba(0, 0, 0, 0.06);
-    border: 3px solid #c3c3c351 !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.288) !important;
     width: 87% !important;
 }
 
@@ -402,7 +401,7 @@ body {
     display: flex; 
     align-items: center; 
     padding: 0.8em 1.4em; 
-    gap: 0.8em; 
+    gap: 0.7em; 
 }
 
 .resume-button svg {
@@ -741,7 +740,7 @@ footer h4 {
 
     #codepen-section {
         margin-top: -75px !important;
-        width: 87%;
+        width: 87% !important;
     }
 
     .card .card-icon {
@@ -1188,6 +1187,14 @@ footer h4 {
         height: auto;
     }
 
+    .card-back h3 {
+        font-size: 1.3rem;
+    }
+
+    .card-back p {
+        font-size: 1.3rem;
+    }
+
     .resume-button {
         border-radius: 38px;
         margin-top: 7em;
@@ -1257,27 +1264,24 @@ footer h4 {
         scale: 0.9;
     }
 }
-/* 
-@media  only screen and (min-device-pixel-ratio: 2), 
-    only screen and (min-resolution: 192dpi) {
-  
-    html {
-        -webkit-transform: scale(0.5);
-        -moz-transform: scale(0.5);
-        -o-transform: scale(0.5);
-        transform: scale(0.5);
-    }
 
+/* 1.25 dpr */
+/*  
+@media 
+(-webkit-min-device-pixel-ratio: 1.25), 
+(min-resolution: 120dpi){ 
+    /* Retina-specific stuff here */
+    /*
     .navbar {
-        padding-top: 8em;
+        padding-top: 6em;
     }
 
     #logo {
-        width: 19%;
+        width: 10%;
     }
 
     #navigation h3 a {
-        font-size: 2.1rem;
+        font-size: 1.3rem;
     }
 
     #navigation {
@@ -1285,67 +1289,93 @@ footer h4 {
     }
 
     .welcome-section {
-        margin-top: 160px;
+        margin-top: 130px;
     }
 
     .welcome-section h1 {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
     .welcome-section h2 {
-        font-size: 2.3rem;
-        margin-bottom: 2.4em;
+        font-size: 1.6rem;
+        margin-bottom: 2.6em;
     }
 
+    .welcome-section img {
+        width: 20%; /*check if this is okay because it's an image */ /*
+        height: auto;
+    }
+    
     .personal-description h2 {
         font-size: 3.1rem;
     }
 
+
+    .digital-art img {
+        width: 67%;
+        height: auto;
+        margin-top: 3em;
+    }
+
+    .personal-description h2 {
+        font-size: 2.2rem;
+        margin-top: 2em;
+    }
+
     .personal-description p {
-        font-size: 2.4rem;
-        padding: 1.7em;
+        font-size: 1.5rem;
+        padding: 1.5em 8em;
+    }
+
+    .personal-description hr {
+        display: none;
     }
 
     .skills-container {
         top: -400px;
+        width: 68%;
     }
 
     .frontend-box h3, 
     .uiux-box h3 {
-        font-size: 1.9rem;
+        font-size: 1.3rem;
     }
 
     .frontend-box p, 
     .uiux-box p {
-        font-size: 1.5rem;
-        line-height: 1.7em;
+        font-size: 1rem;
+        line-height: 1.9em;
     }
 
     .frontend-box h4, 
     .uiux-box h4 {
-        font-size: 1.7rem;
+        font-size: 1.1rem;
     }
 
     .frontend-box ul,
     .uiux-box ul {
-        font-size: 1.7rem;
+        font-size: 1.1rem;
     }
 
     .icon-container {
-        width: 6.9em;
-        height: 6.9em;
+        width: 6.2em;
+        height: 6.2em;
         margin: 3em 0;
+    }
+
+    .description-skills-section {
+        height: 2050px;
     }
         
     #codepen-section {
-        height: 50em !important;
+        height: 40em !important;
         margin-bottom: 7em !important;
-        width: 90% !important;
+        width: 69% !important;
     }
 
     #codepen-section .game-section .item {
-        width: 450px !important;
-        height: 530px !important;
+        width: 300px !important;
+        height: 380px !important;
     }
 
     #codepen-section .game-section .item-desc { 
@@ -1353,16 +1383,16 @@ footer h4 {
     }
 
     #codepen-section h2 {
-        font-size: 1.8rem !important;
-        margin: 40px 0 !important;
+        font-size: 1.3rem !important;
+        margin: 30px 0 !important;
     }
 
     #codepen-section h3 {
-        font-size: 32px !important;
+        font-size: 20px !important;
     }
 
     #codepen-section p {
-        font-size: 22px !important;
+        font-size: 15px !important;
     }
 
     #codepen-section .line-title {
@@ -1374,9 +1404,15 @@ footer h4 {
         margin-top: 1em;
     }
 
+    .card-container {
+        width: 75%;
+        gap: 4em;
+        column-gap: 0;
+    }
+
     .card {
-        height: 19em;
-        width: 90%;
+        height: 16em;
+        width: 85%;
     }
 
     .card .card-icon {
@@ -1385,34 +1421,40 @@ footer h4 {
     }
 
     .card .card-front img {
-        width: 14em;
+        width: 12em;
         height: auto;
     }
 
+    .card-back h3 {
+        font-size: 1.1rem;
+    }
+
+    .card-back p {
+        font-size: 1.1rem;
+    }
+
     .resume-button {
-        border-radius: 38px;
-        margin-top: 7em;
+        margin-top: 6em;
     }
 
     .resume-button a {
-        padding: 1em 2.6em;
-        font-size: 1.4rem;
+        padding: 0.9em 2.5em;
+        font-size: 1rem;
     }
 
     .cta-box {
-        display: grid;
-        grid-template-columns: 0.4fr 0.4fr 0.4fr;
-        bottom: 640px;
+        bottom: 700px;
+        height: 15em;
     }
 
     .cta-box h3 {
         margin: 0 1em;
-        font-size: 2.2rem;
-        line-height: 3.3rem;
+        font-size: 1.8rem;
+        line-height: 3rem;
     }
 
     .cta-box p {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         line-height: 1.6em;
     }
 
@@ -1422,12 +1464,12 @@ footer h4 {
     }
 
     .cta-box a {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         padding: 0.9em 1.7em;
     }
-
+    
     .cta-box svg {
-        width: 1.05em;
+        width: 0.9em;
         height: auto;
     }
 
@@ -1436,25 +1478,48 @@ footer h4 {
     }
 
     #logo2-wrapper {
-        scale: 2.5;
+        scale: 1.8;
     }
 
     footer h4 {
-        font-size: 1.8rem;
-        width: 35%
+        font-size: 1.2rem;
+        width: 23%
     }
     .social-links-container {
-        margin: 3.2em 0;
-        width: 40%;
+        margin: 4em 0;
+        width: 27%;
     }
 
     .social-links {
-        width: 4em;
-        height: 4em;
-        margin: 0 1.4em;
+        width: 2.7em;
+        height: 2.7em;
+        margin: 0;
     } 
 
     .social-links svg {
-        scale: 0.9;
+        scale: 1.2;
     }
-} */
+    
+}
+
+/* 1.3 dpr */
+@media 
+(-webkit-min-device-pixel-ratio: 1.3), 
+(min-resolution: 124.8dpi){ 
+    /* Retina-specific stuff here */
+    
+}
+
+/* 1.5 dpr */
+@media 
+(-webkit-min-device-pixel-ratio: 1.5), 
+(min-resolution: 144dpi){ 
+    /* Retina-specific stuff here */
+
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    /* Retina-specific stuff here */
+}
