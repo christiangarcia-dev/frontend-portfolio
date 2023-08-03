@@ -155,9 +155,23 @@ h1 {
 }
 
 /* Responsive design */
-@media screen and (max-width: 600px) {
-    .input-container {
-        flex-direction: column;
-    }
+@media screen and (min-width: 426px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+    
 }
 

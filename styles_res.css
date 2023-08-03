@@ -16,19 +16,18 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%; /* check if this line is necessary */ 
-    height: 7em; 
+    height: fit-content; 
     align-items: center; 
     padding: 0 1.5%; 
+    padding-top: 0.7em;
 }
 
 #logo {
-    width: 25%; 
-    min-width: 90px; 
+    width: 4em;
 }
 
 #logo img {
-    width: 100%; /* check if this line is necessary */ 
-    min-width: 90px; 
+    width: 3.5em;
     height: auto;
     display: block;
 }
@@ -40,14 +39,14 @@ body {
 
 #navigation h3 a {
     text-decoration: none;
-    font-weight: 20;
-    font-size: 0.9rem; 
+    font-weight: 100;
+    font-size: 0.5rem; 
     padding: 0.35em 0.95em; 
 }
 
 #contact-nav {
     color: #00A0C3;
-    border: solid #00A0C3 0.09rem;
+    border: solid #00A0C3 0.04rem;
     border-radius: 1.87em;
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     margin-right: 1.7em;
@@ -62,8 +61,8 @@ body {
 }
 
 #projects-nav {
-    display: none; 
     color: #000; 
+    display: none;
 }
 
 /* INITIAL AREA */ 
@@ -73,31 +72,32 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    min-height: 38vh; 
     width: 100%; /* check if this line is necessary */ 
-    margin-top: 2vh; 
+    margin-top: 1em; 
 }
 
 .welcome-section h1 {
     text-align: center;
-    font-size: 1.3rem; 
-    font-weight: 300; 
+    font-size: 0.8rem; 
+    font-weight: 300;
     max-width: 88%;
-    margin-bottom: 3vh; 
+    margin-bottom: 1em; 
+    margin-top: 1em;
 }
 
 .welcome-section h2 {
     text-align: center;
-    font-size: 0.9rem; 
+    font-size: 0.6rem; 
     font-weight: 280; 
     max-width: 80%;
     margin-top: 1vh;
-    margin-bottom: 5vh;
+    margin-bottom: 1vh;
 }
 
 .welcome-section img {
-    width: 38%; /*check if this is okay because it's an image */ 
+    width: 24%; 
     height: auto;
+    margin-top: 2em;
 }
 
 .digital-art {
@@ -105,13 +105,13 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 12vh;
-    padding: 0 5vh;
+    margin-top: 1em; 
 }
 
 .digital-art img {
-    width: 100%;
+    width: 60%;
     height: auto;
+    margin-top: 2em;
 }
 
 /* ABOUT ME SECTION */ 
@@ -128,16 +128,17 @@ body {
 
 .personal-description h2 {
     padding-top: 2em;
+    margin: 0.2em;
     color: #fff;
-    font-size: 1.9rem; 
+    font-size: 0.9rem; 
     font-weight: 300;
     width: 100%; /* check if this line is necessary */
 }
 
 .personal-description p {
-    padding: 1.5em 1.5em 1.5em 1.5em; 
+    padding: 1.5em 4em; 
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 10;
     line-height: 200%;
 }
@@ -147,6 +148,7 @@ body {
     margin-top: 1.4em;
     margin-bottom: 1.4em; 
     color: #fff;
+    display: none;
 }
 
 .description-skills-section {
@@ -178,8 +180,8 @@ body {
     background-color: #FFF;
     line-height: 2em; 
     border-radius: 14px 14px 14px 14px;
-    box-shadow: 0 0 25px -5px rgba(0, 0, 0, 0.288);
-    top: -160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
+    top: -170px;
 }
 
 .frontend-box {
@@ -189,12 +191,11 @@ body {
 }
 
 .icon-container {
-    width: 5.8em; 
-    height: 5.8em; 
-    min-height: 5.8em;
+    width: 4.5em; 
+    height: 4.5em; 
     border-radius: 50%; 
     position: relative; 
-    background: #ff725e; 
+    background: #16ecc5; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -222,27 +223,27 @@ body {
 .frontend-box h3, 
 .uiux-box h3 {
     padding-bottom: 1.5em;
-    font-size: 1.16rem;
+    font-size: 1rem;
 }
 
 .frontend-box h4, 
 .uiux-box h4 {
-    color: #f4513c; 
+    color: #10b294; 
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.85rem;
 }
 
 .frontend-box p, 
 .uiux-box p {
     padding: 0em 2.8em;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .frontend-box ul,
 .uiux-box ul {
     list-style-type: none; 
     line-height: 2.25em;
-    font-size: 1rem;
+    font-size: 0.85rem;
 }
 
 .frontend-box ul :nth-child(10),
@@ -253,8 +254,8 @@ body {
 /* PROJECTS SECTION */ 
 #codepen-section {
     margin-top: -50px !important;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.288) !important;
     width: 87% !important;
+    border-radius: 14px !important;
 }
 
 /* EDUCATION SECTION */ 
@@ -263,7 +264,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to top, #FFF, #009fc370, #FFF);
+    background: linear-gradient(to top, #FFF 0%, #cecaca 55%, #FFF 100%);
     height: 70em;
     width: 100%; /* check if this line is necessary */ 
     margin-top: 250px; /* restyle this on breakpoints*/
@@ -294,7 +295,7 @@ body {
     background: #ffffff;
     width: 90%; 
     height: 15.25em;
-    border-radius: 1.87em; 
+    border-radius: 14px !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
     position: relative;
     perspective: 1000px; 
@@ -306,7 +307,7 @@ body {
     width: 100%; /* check if this line is necessary */ 
     height: 100%; /* check if this line is necessary */ 
     transition: opacity 0.6s ease; 
-    border-radius: 1.87em;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -346,23 +347,27 @@ body {
 
 #card1-gwu-cs .card-back {
     background: linear-gradient(to bottom, #36d1dc, #5b86e5);
+    background: #002C35;
 }
 
 #card2-gwu-ixd .card-back {
     background: linear-gradient(to bottom, #36d1dc, #5b86e5);
+    background: #002C35;
 }
 
 #card3-udemy .card-back {
     background: linear-gradient(to bottom, #36d1dc, #5b86e5);
-}
+    background: #002C35;
+}   
 
 #card4-coursera .card-back {
-    background: linear-gradient(to bottom, #36d1dc, #5b86e5);
+    background: #002C35;
 }
 
 .card-back h3,
 .card-back p {
     text-align: center; 
+    color: #FFF;
 }
 
 .card:hover .card-front {
@@ -383,21 +388,21 @@ body {
 
 .resume-button {
     margin: 3.9em 0;
-    border: 2px solid #00A0C3;
-    border-radius: 1.87em;
+    border: 1.5px solid rgba(140, 140, 140, 0.533);
+    border-radius: 38px;
     background-color: #FFF;
     display: inline-flex; 
     justify-content: center;
     align-items: center;
-    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .resume-button a {
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.65rem;
     font-style: bold;
     letter-spacing: 1.5px;
-    color: #00A0C3;
+    color: rgba(140, 140, 140, 0.456);
     display: flex; 
     align-items: center; 
     padding: 0.8em 1.4em; 
@@ -405,15 +410,15 @@ body {
 }
 
 .resume-button svg {
-    fill: #00A0C3; 
     width: 1em;
+    fill: rgba(140, 140, 140, 0.456)
 }
 
 .resume-button:hover,
 .resume-button:focus,
 .resume-button:active {
-    background-color: #00A0C3;
-    border-color: #00A0C3;
+    background: #002C35;
+    border-color: #002C35;
 }
 
 .resume-button:hover a,
@@ -462,7 +467,7 @@ body {
 
 .cta-box h3 {
     color: #FFF;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: bold;
     grid-column: unset; 
     margin-top: 0.5em;
@@ -471,7 +476,7 @@ body {
 .cta-box p {
     color: #FFF;
     font-weight: lighter;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.6rem;
     padding: 0.62em 0.62em; 
     grid-column: unset;
@@ -479,7 +484,7 @@ body {
 
 .cta-box a {
     text-decoration: none;
-    font-size: 0.96rem;
+    font-size: 0.75rem;
     font-weight: lighter;
     letter-spacing: 1.5px;
     color: #FFF;
@@ -567,8 +572,8 @@ footer div {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.37em;
-    height: 2.37em;
+    width: 2.27em;
+    height: 2.27em;
     padding: 0.62em;
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
@@ -600,7 +605,7 @@ a.social-links:link, a.social-links:visited, a.social-links:hover, a.social-link
 }
 
 footer h4 {
-    color: #FFF;
+    color: rgba(255, 255, 255, 0.901);
     font-size: 0.9rem;
     font-weight: lighter;
     width: 18em;
@@ -611,15 +616,173 @@ footer h4 {
 
 
 /* MEDIA QUERIES */ 
+/* Codepen styles for main css */
+@media screen and (min-width: 375px) {
+
+    #codepen-section .game-section {
+        padding: 1.5em 1em !important;
+    }
+
+    #codepen-section .game-section .item {
+        width: 250px !important;
+        height: 320px !important;
+    }
+
+    #codepen-section h2 {
+        font-size: 1.2rem !important;
+        gap: 2 !important;
+        padding-bottom: 17px !important;
+        margin-bottom: 20px !important;
+    }
+
+    #codepen-section a {
+        font-size: 0.8rem !important;
+    }
+
+    #codepen-section h3 {
+        font-size: 1.2rem !important;
+        line-height: 1 !important;
+    }
+
+    #codepen-section .line-title {
+        width: 40% !important;
+        margin-left: 20px !important;
+    }
+
+    #codepen-section .owl-theme .owl-dots .owl-dot span {
+        width: 9px !important;
+        height: 9px !important;
+    }
+
+
+    .cta-box {
+        height: 16em;
+    }
+
+    #logo2-wrapper {
+        scale: 1.3;
+    }
+}
+
 /* Styles for larger mobile screens */
 @media screen and (min-width: 426px) {
     
+    .navbar {
+        padding-top: 0.6em; 
+    }
+
     #navigation h3 a {
+        font-size: 0.55rem;
+    }
+
+    #navigation {
+        gap: 0.5em;
+    }
+
+    #projects-nav {
+        display: contents;
+    }
+
+    #logo img{
+        width: 4em;
+    }
+
+    .welcome-section img {
+        width: 25%;
+    }
+
+    .personal-description h2 {
+        font-size: 1.1rem;
+        margin-top: 0.3em;
+    }
+
+    .personal-description p {
+        padding-left: 4em;
+        padding-right: 4em;
+        font-size: 0.8rem;
+    }
+
+    .personal-description hr {
+        display: none;
+    }
+
+    .frontend-box, 
+    .uiux-box {
+        width: 87%;
+    }
+
+    .frontend-box {
+        top: -180px;
+    }
+
+    .icon-container {
+        width: 4.8em; 
+        height: 4.8em; 
+    }
+
+    .frontend-box h3,
+    .uiux-box h3 {
         font-size: 1rem;
+    }
+
+    .frontend-box p,
+    .uiux-box p {
+        font-size: 0.8rem;
+        line-height: 1.8em;
+    }
+
+    .frontend-box h4,
+    .uiux-box h4 {
+        font-size: 0.9rem;
+    }
+
+    .frontend-box ul,
+    .uiux-box ul {
+        font-size: 0.9rem;
     }
 
     #codepen-section {
         width: 87% !important;
+    }
+
+    #codepen-section .game-section {
+        padding: 1.5em 1em !important;
+    }
+
+    #codepen-section .game-section .item {
+        width: 250px !important;
+        height: 320px !important;
+    }
+
+    #codepen-section h2 {
+        font-size: 1.2rem !important;
+        gap: 2 !important;
+        padding-bottom: 17px !important;
+        margin-bottom: 20px !important;
+    }
+
+    #codepen-section a {
+        font-size: 0.8rem !important;
+    }
+
+    #codepen-section h3 {
+        font-size: 1.2rem !important;
+        line-height: 1 !important;
+    }
+
+    #codepen-section .line-title {
+        width: 40% !important;
+        margin-left: 20px !important;
+    }
+
+    #codepen-section .owl-theme .owl-dots .owl-dot span {
+        width: 9px !important;
+        height: 9px !important;
+    }
+
+    .education-section {
+        height: 73em;
+        margin-top: 205px;
     }
 
     .card .card-icon {
@@ -627,11 +790,6 @@ footer h4 {
         left: 6%;   
         height: 1.1rem;   
         width: 1.1rem;    
-    }
-
-    .frontend-box, 
-    .uiux-box {
-        width: 87%;
     }
 
     .card {
@@ -660,8 +818,69 @@ footer h4 {
         opacity: 1;
     }
 
+    .resume-button {
+        border: 1.5px solid rgba(140, 140, 140, 0.456);
+    }
+
+    .resume-button a {
+        font-size: 0.6rem;
+    }
+
+    .cta-box h3 {
+        font-size: 1.2rem;
+    }
+
+    .cta-box button {
+        border: 1.5px solid #16ecc5;
+    }
+    
+    .cta-box a {
+        font-size: 0.8rem;
+    }
+
+    #logo2-wrapper {
+        scale: 1.5;
+    }
+    
     .social-links-container {
         margin: 2.3em 0em;
+    }
+}
+
+@media screen and (min-width: 597px) {
+    
+    #logo img {
+        width: 4.5em;
+    }
+
+    #navigation h3 a {
+        font-size: 0.6rem;
+    }
+
+    .welcome-section h1 {
+        font-size: 1rem;
+    }
+
+    .welcome-section h2 {
+        font-size: 0.8rem;
+    }
+
+    .personal-description h2 {
+        font-size: 1.2rem;
+    }
+
+    .personal-description p {
+        padding-left: 4.5em;
+        padding-right: 4.5em;
+        font-size: 0.9rem;
+    }
+
+    .frontend-box {
+        top: -270px;
+    }
+
+    .resume-button a {
+        font-size: 0.7rem;
     }
 }
 
@@ -669,15 +888,19 @@ footer h4 {
 @media screen and (min-width: 768px) {
     
     .navbar {
-        padding-top: 3em;
+        padding-top: 1.8em;
     }
 
-    #logo {
-        width: 20%; 
+    #logo img {
+        width: 7em; 
     }
 
     #navigation h3 a {
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+
+    #projects-nav {
+        display: contents;
     }
 
     #contact-nav {
@@ -685,28 +908,40 @@ footer h4 {
     }
 
     .welcome-section {
-        margin-top: 70px;
+        margin-top: 2.3em;
     }
 
     .welcome-section h1 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+        margin-top: 0.5em;
     }
 
     .welcome-section h2 {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     } 
 
+    .welcome-section img {
+        width: 25%;
+    }
+
     .personal-description h2 {
-        font-size: 2.3rem;
+        font-size: 1.6rem;
+        margin-top: 1em;
     }
 
     .personal-description p {
-        font-size: 1.6rem;
+        font-size: 1.1rem;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .personal-description hr {
+        display: none;
     }
 
     .icon-container {
-        width: 6em; 
-        height: 6em; 
+        width: 4.5em; 
+        height: 4.5em; 
     }
 
     .icon {
@@ -715,32 +950,38 @@ footer h4 {
 
     .frontend-box,
     .uiux-box {
-        top: -255px;
+        top: -270px;
     }
 
     .frontend-box h3,
     .uiux-box h3 { 
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .frontend-box h4, 
     .uiux-box h4 {
-        font-size: 1.17rem;
+        font-size: 1rem;
     }
 
     .frontend-box p, 
     .uiux-box p {
-        font-size: 1.17rem;
+        font-size: 1rem;
+        line-height: 2;
     }
 
     .frontend-box ul,
     .uiux-box ul {
-        font-size: 1.17rem;
+        font-size: 1rem;
     }
 
     #codepen-section {
-        margin-top: -75px !important;
+        margin-top: -150px !important;
         width: 87% !important;
+    }
+
+    .education-section {
+        height: 80em;
+        margin-top: 10em;
     }
 
     .card .card-icon {
@@ -755,7 +996,7 @@ footer h4 {
     }
 
     .resume-button a {
-        font-size: 1.1rem;
+        font-size: 0.7rem;
         padding: 0.9em 2.5em;
     }
 
@@ -792,15 +1033,74 @@ footer h4 {
     }
 }
 
+/* Small changes for in between tablet and small laptops */ 
+@media screen and (min-width: 880px) {
+
+    #navigation {
+        gap: 1.2em;
+    }
+    .welcome-section img {
+        width: 24%;
+        margin-top: 2.5em;
+    }
+
+    .digital-art img {
+        margin-top: 2.5em;
+    }
+
+    .frontend-box {
+        top: -295px;
+    }
+
+    .resume-button a {
+        font-size: 0.8rem;
+    }
+
+    .cta-box {
+        height: 14.5em;
+        bottom: 450px;
+    }
+
+    .cta-box h3 {
+        font-size: 1.4rem;
+    }
+
+    .cta-box p {
+        font-size: 0.9rem;
+    }
+
+    .cta-box a {
+        font-size: 0.9rem;
+    }
+
+    #logo2-wrapper {
+        scale: 1.3;
+    }
+
+    footer h4 {
+        font-size: 1rem;
+        width: 26%;
+    }
+    
+    .social-links {
+        width: 2.5em;
+        height: 2.5em;
+    }
+}
+
 /* Styles for small laptops */
 @media screen and (min-width: 992px) {
     
     .navbar {
-        padding-top: 5em;
+        padding-top: 1.2em;
+    }
+
+    #logo img {
+        width: 7em;
     }
 
     #navigation h3 a {
-        font-size: 1.65rem;
+        font-size: 1.08rem;
     }
 
     #projects-nav {
@@ -812,27 +1112,34 @@ footer h4 {
     }
 
     .welcome-section {
-        margin-top: 100px;
+        margin-top: 2.3em;
     }
 
     .welcome-section h1 {
-        font-size: 2.2rem;
+        font-size: 1.7rem;
     }
 
     .welcome-section h2 {
-        font-size: 1.8rem;
+        font-size: 1.35rem;
     }
     
     .welcome-section img {
-        width: 35%;
+        width: 18%;
+        margin-top: 2.7em;
+    }
+
+    .digital-art img {
+        margin-top: 2.7em;
     }
 
     .personal-description h2 {
-        font-size: 2.6rem;
+        font-size: 1.6rem;
     }
 
     .personal-description p {
-        font-size: 1.9rem;
+        font-size: 1.2rem;
+        padding-left: 6.5em;
+        padding-right: 6.5em;
     }
 
     .skills-container {
@@ -842,6 +1149,7 @@ footer h4 {
         width: 90%;
         margin: auto;
         top: -285px;
+        margin-bottom: 6em;
     }
 
     .frontend-box,
@@ -850,9 +1158,23 @@ footer h4 {
         min-height: 0;
         position: static;
         min-height: 100%;
-        /* height: 1300px; */
         margin: 0;
-        justify-content: space-evenly;
+    }
+
+    .frontend-box p,
+    .uiux-box p {
+        font-size: 0.88rem;
+        line-height: 2.1;
+    }
+
+    .frontend-box h4,
+    .uiux-box h4 {
+        font-size: 0.9rem;
+    }
+
+    .frontend-box ul,
+    .uiux-box ul {
+        font-size: 0.9rem;
     }
 
     .frontend-box {
@@ -868,13 +1190,18 @@ footer h4 {
     }
 
     .icon-container {
-        width: 6.5em;
-        height: 6.5em;
+        width: 5em;
+        height: 5em;
         margin-bottom: 3em;
     }
 
     #codepen-section {
         top: -70px;
+        width: 90% !important;
+    }
+
+    #codepen-section p {
+        padding-bottom: 0.5em;
     }
 
     .education-section {
@@ -885,7 +1212,13 @@ footer h4 {
     .card-container {
         grid-template-columns: 1fr 1fr; 
         grid-template-rows: repeat(2, auto);
-        width: 90%;
+        width: 97%;
+    }
+
+    .card-back h3,
+    .card-back p
+    {
+        font-size: 0.92rem;
     }
 
     .resume-button {
@@ -893,28 +1226,45 @@ footer h4 {
     }
 
     .cta-box {
-        bottom: 590px;
+        display: grid;
+        grid-template-columns: 0.4fr 0.4fr 0.4fr;
+        bottom: 570px;
+        height: 11em;
     }
 
     .cta-box h3 {
-        font-size: 1.8rem;
+        margin: 0 1em;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
     }
 
     .cta-box p {
-        font-size: 1.3rem;
-        padding: 1em 0.62em;
+        font-size: 0.9rem;
+        line-height: 1.7em;
+    }
+
+    .cta-box button {
+        border-radius: 38px;
+        margin: 0 1.3em;
     }
 
     .cta-box a {
-        font-size: 1.3rem;
+        font-size: 0.9rem;
+        padding: 0.8em 1.7em;
+        letter-spacing: 1; /* Move to main */
+    }
+    
+    .cta-box svg {
+        width: 1.05em;
+        height: auto;
     }
 
     footer {
-        height: 50em;
+        height: 45em;
     }
 
     #logo2-wrapper{
-        scale: 2;
+        scale: 1.6;
     }
 
     #footer-logo {
@@ -924,115 +1274,154 @@ footer h4 {
     }
 
     footer h4 {
-        font-size: 1.5rem;
-        width: 40%;
+        font-size: 1.1rem;
+        width: 30%;
     }
 
     .social-links-container {
-        margin: 2.9em 0;
+        margin: 2.8em 0;
     }
 
     .social-links {
-        width: 3.4em;
-        height: 3.4em;
+        width: 2.4em;
+        height: 2.4em;
         margin: 0 1.2em;
     } 
 
     .social-links svg {
-        scale: 0.9;
+        scale: 1;
     }
 } 
+
+@media screen and (min-width: 1080px) {
+    
+    .skills-container {
+        top: -310px;
+    }
+
+    #codepen-section {
+        top: -90px;
+    }
+}
 
 /* Styles for desktops */
 @media screen and (min-width: 1200px) {
     
     .navbar {
-        padding-top: 6em;
+        padding-top: 1.2em;
     }
 
-    #logo {
-        width: 18%;
+    #logo img {
+        width: 7.3em;
     }
 
     #navigation h3 a {
-        font-size: 1.7rem;
+        font-size: 1.09rem;
     }
 
     #navigation {
-        gap: 1.6em; 
+        gap: 1.5em; 
     }
 
     .welcome-section {
-        margin-top: 120px;
+        margin-top: 2.3em;
     }
 
     .welcome-section h1 {
-        font-size: 2.3rem;
+        font-size: 1.7rem;
     }
 
     .welcome-section h2 {
-        font-size: 1.9rem;
+        font-size: 1.35rem;
+    }
+
+    .welcome-section img {
+        margin-top: 3.3em;
+    }
+
+    .digital-art img {
+        margin-top: 3.3em;
     }
 
     .personal-description h2 {
-        font-size: 2.8rem;
+        font-size: 1.95rem;
     }
 
     .personal-description p {
-        font-size: 2.1rem;
-        padding: 1.6em;
+        font-size: 1.3rem;
+        padding-left: 10em;
+        padding-right: 10em;
+        line-height: 2.2;
     }
 
     .skills-container {
-        top: -335px;
+        top: -400px;
+    }
+
+    .icon-container {
+        width: 5.3em;
+        height: 5.3em;
+        margin-bottom: 3em;
     }
 
     .frontend-box h3, 
     .uiux-box h3 {
-        font-size: 1.7rem;
-    }
-
-    .frontend-box p, 
-    .uiux-box p {
         font-size: 1.3rem;
-        line-height: 1.6em;
     }
 
-    .frontend-box h4, 
+    .frontend-box p,
+    .uiux-box p {
+        font-size: 0.95rem;
+        line-height: 2.3;
+    }
+
+    .frontend-box h4,
     .uiux-box h4 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .frontend-box ul,
     .uiux-box ul {
-        font-size: 1.5rem;
-    }
-
-    .icon-container {
-        width: 6.7em;
-        height: 6.7em;
-        margin: 3em 0;
+        font-size: 1rem;
     }
         
     #codepen-section {
-        height: 40em !important;
+        height: 38em !important;
         margin-bottom: 7em !important;
         width: 90% !important;
+        top: -120px;
     }
 
     #codepen-section .game-section .item {
-        width: 350px !important;
-        height: 430px !important;
+        width: 290px !important;
+        height: 390px !important;
+    }
+
+    #codepen-section .game-section .item-desc { 
+        padding: 0 24px 18px !important;
     }
 
     #codepen-section h2 {
-        font-size: 1.5rem !important;
-        gap: 2 !important;
+        font-size: 1.3rem !important;
+        margin: 17px 0 !important;
+    }
+
+    #codepen-section h3 {
+        font-size: 20px !important;
+    }
+
+    #codepen-section p {
+        line-height: 1.5 !important;
+    }
+
+    #codepen-section a {
+        font-size: 0.9rem !important;
     }
 
     #codepen-section .line-title {
         width: 40% !important;
         margin-left: 20px !important;
+        
     }
 
     .education-section {
@@ -1055,7 +1444,7 @@ footer h4 {
 
     .resume-button a {
         padding: 1em 2.6em;
-        font-size: 1.15rem;
+        font-size: 0.9rem;
     }
 
     .social-links-container {
@@ -1067,15 +1456,19 @@ footer h4 {
 @media screen and (min-width: 1440px) {
 
     .navbar {
-        padding-top: 8em;
+        padding-top: 2em;
     }
 
     #logo {
-        width: 19%;
+        width: 45em;
+    }
+
+    #logo img {
+        width: 7.5em;
     }
 
     #navigation h3 a {
-        font-size: 2.1rem;
+        font-size: 1.2rem;
     }
 
     #navigation {
@@ -1083,67 +1476,92 @@ footer h4 {
     }
 
     .welcome-section {
-        margin-top: 160px;
+        margin-top: 2em;
     }
 
     .welcome-section h1 {
-        font-size: 2.8rem;
+        font-size: 2.3rem;
+        width: 75%;
+        margin-bottom: 0.5em;
     }
 
     .welcome-section h2 {
-        font-size: 2.3rem;
+        font-size: 1.6rem;
         margin-bottom: 2.4em;
     }
 
+    .welcome-section img {
+        width: 17em;
+        margin-bottom: 1em;
+    }
+
     .personal-description h2 {
-        font-size: 3.1rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-top: 2em;
     }
 
     .personal-description p {
-        font-size: 2.4rem;
-        padding: 1.7em;
+        font-size: 1.2rem;
+        padding: 1em 15em 0em 15em;
+        margin-bottom: 2em;
+    }
+
+    .personal-description hr {
+        display: none;
     }
 
     .skills-container {
-        top: -400px;
+        top: -420px;
+        width: 70%;
+    }
+
+    .frontend-box,
+    .uiux-box {
+        width: 100%;
     }
 
     .frontend-box h3, 
     .uiux-box h3 {
-        font-size: 1.9rem;
+        font-size: 1.3rem;
     }
 
     .frontend-box p, 
     .uiux-box p {
-        font-size: 1.5rem;
+        font-size: 1rem;
         line-height: 1.7em;
     }
 
     .frontend-box h4, 
     .uiux-box h4 {
-        font-size: 1.7rem;
+        font-size: 0.9rem;
     }
 
     .frontend-box ul,
     .uiux-box ul {
-        font-size: 1.7rem;
+        font-size: 0.9rem;
     }
 
     .icon-container {
-        width: 6.9em;
-        height: 6.9em;
-        margin: 3em 0;
+        width: 5em;
+        height: 5em;
+        margin: 3em 0; 
+    }
+
+    .icon {
+        width: 50%;
     }
         
     #codepen-section {
-        height: 50em !important;
+        top: -125px !important;
+        height: 37em !important;
         margin-bottom: 7em !important;
-        width: 90% !important;
+        width: 70% !important;
     }
 
     #codepen-section .game-section .item {
-        width: 450px !important;
-        height: 530px !important;
+        width: 300px !important;
+        height: 370px !important;
     }
 
     #codepen-section .game-section .item-desc { 
@@ -1151,21 +1569,25 @@ footer h4 {
     }
 
     #codepen-section h2 {
-        font-size: 1.8rem !important;
-        margin: 40px 0 !important;
+        font-size: 1.4rem !important;
+        margin: 17px 0 !important;
     }
 
     #codepen-section h3 {
-        font-size: 32px !important;
+        font-size: 20px !important;
     }
 
     #codepen-section p {
-        font-size: 22px !important;
+        font-size: 14px !important;
     }
 
     #codepen-section .line-title {
         width: 40% !important;
         margin-left: 20px !important;
+    }
+
+    .card-container {
+        width: 74%;
     }
 
     .education-section {
@@ -1183,43 +1605,52 @@ footer h4 {
     }
 
     .card .card-front img {
-        width: 14em;
+        width: 12em;
         height: auto;
     }
 
     .card-back h3 {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .card-back p {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .resume-button {
-        border-radius: 38px;
-        margin-top: 7em;
+        border-radius: 30px; /* Move to main */ 
+        border-color: rgba(140, 140, 140, 0.456); /* Move to main */ 
     }
 
     .resume-button a {
         padding: 1em 2.6em;
-        font-size: 1.4rem;
+        font-size: 0.8rem;
+        letter-spacing: normal; /* Move to main */ 
+        font-weight: 600; /* Move to main */ 
+        color: rgb(140, 140, 140); /* Move to main */ 
+    }
+
+    .resume-button svg {
+        fill: rgb(140, 140, 140); /* Move to main */ 
+        margin-bottom: 0.2em; /* Move to main */ 
     }
 
     .cta-box {
         display: grid;
         grid-template-columns: 0.4fr 0.4fr 0.4fr;
-        bottom: 640px;
+        bottom: 550px;
+        height: 11em;
     }
 
     .cta-box h3 {
         margin: 0 1em;
-        font-size: 2.2rem;
-        line-height: 3.3rem;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
     }
 
     .cta-box p {
-        font-size: 1.5rem;
-        line-height: 1.6em;
+        font-size: 1rem;
+        line-height: 1.7em;
     }
 
     .cta-box button {
@@ -1228,8 +1659,9 @@ footer h4 {
     }
 
     .cta-box a {
-        font-size: 1.6rem;
-        padding: 0.9em 1.7em;
+        font-size: 1.1rem;
+        padding: 0.8em 1.7em;
+        letter-spacing: 1; /* Move to main */
     }
     
     .cta-box svg {
@@ -1238,243 +1670,7 @@ footer h4 {
     }
 
     footer {
-        height: 55em;
-    }
-
-    #logo2-wrapper {
-        scale: 2.5;
-    }
-
-    footer h4 {
-        font-size: 1.8rem;
-        width: 35%
-    }
-    .social-links-container {
-        margin: 3.2em 0;
-        width: 40%;
-    }
-
-    .social-links {
-        width: 4em;
-        height: 4em;
-        margin: 0 1.4em;
-    } 
-
-    .social-links svg {
-        scale: 0.9;
-    }
-}
-
-/* 1.25 dpr */
-/*  
-@media 
-(-webkit-min-device-pixel-ratio: 1.25), 
-(min-resolution: 120dpi){ 
-    /* Retina-specific stuff here */
-    /*
-    .navbar {
-        padding-top: 6em;
-    }
-
-    #logo {
-        width: 10%;
-    }
-
-    #navigation h3 a {
-        font-size: 1.3rem;
-    }
-
-    #navigation {
-        gap: 1.7em; 
-    }
-
-    .welcome-section {
-        margin-top: 130px;
-    }
-
-    .welcome-section h1 {
-        font-size: 2.2rem;
-    }
-
-    .welcome-section h2 {
-        font-size: 1.6rem;
-        margin-bottom: 2.6em;
-    }
-
-    .welcome-section img {
-        width: 20%; /*check if this is okay because it's an image */ /*
-        height: auto;
-    }
-    
-    .personal-description h2 {
-        font-size: 3.1rem;
-    }
-
-
-    .digital-art img {
-        width: 67%;
-        height: auto;
-        margin-top: 3em;
-    }
-
-    .personal-description h2 {
-        font-size: 2.2rem;
-        margin-top: 2em;
-    }
-
-    .personal-description p {
-        font-size: 1.5rem;
-        padding: 1.5em 8em;
-    }
-
-    .personal-description hr {
-        display: none;
-    }
-
-    .skills-container {
-        top: -400px;
-        width: 68%;
-    }
-
-    .frontend-box h3, 
-    .uiux-box h3 {
-        font-size: 1.3rem;
-    }
-
-    .frontend-box p, 
-    .uiux-box p {
-        font-size: 1rem;
-        line-height: 1.9em;
-    }
-
-    .frontend-box h4, 
-    .uiux-box h4 {
-        font-size: 1.1rem;
-    }
-
-    .frontend-box ul,
-    .uiux-box ul {
-        font-size: 1.1rem;
-    }
-
-    .icon-container {
-        width: 6.2em;
-        height: 6.2em;
-        margin: 3em 0;
-    }
-
-    .description-skills-section {
-        height: 2050px;
-    }
-        
-    #codepen-section {
-        height: 40em !important;
-        margin-bottom: 7em !important;
-        width: 69% !important;
-    }
-
-    #codepen-section .game-section .item {
-        width: 300px !important;
-        height: 380px !important;
-    }
-
-    #codepen-section .game-section .item-desc { 
-        padding: 0 24px 18px !important;
-    }
-
-    #codepen-section h2 {
-        font-size: 1.3rem !important;
-        margin: 30px 0 !important;
-    }
-
-    #codepen-section h3 {
-        font-size: 20px !important;
-    }
-
-    #codepen-section p {
-        font-size: 15px !important;
-    }
-
-    #codepen-section .line-title {
-        width: 40% !important;
-        margin-left: 20px !important;
-    }
-
-    .education-section {
-        margin-top: 1em;
-    }
-
-    .card-container {
-        width: 75%;
-        gap: 4em;
-        column-gap: 0;
-    }
-
-    .card {
-        height: 16em;
-        width: 85%;
-    }
-
-    .card .card-icon {
-        top: 9.5%;
-        left: 5%;
-    }
-
-    .card .card-front img {
-        width: 12em;
-        height: auto;
-    }
-
-    .card-back h3 {
-        font-size: 1.1rem;
-    }
-
-    .card-back p {
-        font-size: 1.1rem;
-    }
-
-    .resume-button {
-        margin-top: 6em;
-    }
-
-    .resume-button a {
-        padding: 0.9em 2.5em;
-        font-size: 1rem;
-    }
-
-    .cta-box {
-        bottom: 700px;
-        height: 15em;
-    }
-
-    .cta-box h3 {
-        margin: 0 1em;
-        font-size: 1.8rem;
-        line-height: 3rem;
-    }
-
-    .cta-box p {
-        font-size: 1.1rem;
-        line-height: 1.6em;
-    }
-
-    .cta-box button {
-        border-radius: 38px;
-        margin: 0 1.3em;
-    }
-
-    .cta-box a {
-        font-size: 1.2rem;
-        padding: 0.9em 1.7em;
-    }
-    
-    .cta-box svg {
-        width: 0.9em;
-        height: auto;
-    }
-
-    footer {
-        height: 55em;
+        height: 43em;
     }
 
     #logo2-wrapper {
@@ -1482,25 +1678,27 @@ footer h4 {
     }
 
     footer h4 {
-        font-size: 1.2rem;
-        width: 23%
+        font-size: 1.1rem;
+        width: 22%;
     }
+
     .social-links-container {
-        margin: 4em 0;
+        margin: 3.2em 0;
         width: 27%;
     }
 
     .social-links {
-        width: 2.7em;
-        height: 2.7em;
-        margin: 0;
+        width: 2.4em;
+        height: 2.4em;
+        margin: 0 1.2em;
     } 
 
     .social-links svg {
-        scale: 1.2;
+        scale: 1.1;
     }
-    
 }
+
+
 
 /* 1.3 dpr */
 @media 
