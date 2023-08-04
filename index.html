@@ -13,6 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Nunito:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
@@ -20,92 +26,92 @@
     <title>Christian Garcia - Web Developer</title>
 </head>
 <body>
-    <!-- HOME SECTION -->
     <nav class="navbar">
-        <div id="logo">
+        <div class="logo-wrapper" href="#">
             <a href="#">
-                <img src="res/logo-blue-background.png" alt="logo">
+                <svg width="1829" height="2074" viewBox="0 0 156.25 177.16206752227635" class="logo-svg"><defs id="SvgjsDefs1011"></defs><g id="SvgjsG1012" featurekey="rootContainer" transform="matrix(3.1502007406971018,0,0,3.1502007406971018,0.000023179328736052197,0.013147506542870495)" fill="#00a0c3"><path xmlns="http://www.w3.org/2000/svg" d="M23.11 55.78L1.69 43.41A3.39 3.39 0 0 1 0 40.48V15.75a3.39 3.39 0 0 1 1.69-2.94L23.11.45a3.39 3.39 0 0 1 3.39 0l21.41 12.37a3.39 3.39 0 0 1 1.69 2.94v24.72a3.39 3.39 0 0 1-1.69 2.94L26.5 55.78a3.39 3.39 0 0 1-3.39 0z"></path></g><g id="SvgjsG1013" featurekey="nameFeature-0" transform="matrix(1.8368705316129397,0,0,1.8368705316129397,24.693634444517706,40.6922976290269)" fill="#f5f5f5"><path d="M25.92 37 c-2.48 2.24 -5.8 3.4 -9.52 3.4 c-7.84 0 -14.6 -5.88 -14.6 -14.4 s6.76 -14.4 14.6 -14.4 c3.68 0 6.96 1.2 9.36 3.32 l-3.52 3.96 c-1.48 -1.04 -3.48 -1.8 -5.52 -1.8 c-5.04 0 -8.84 3.72 -8.84 8.92 s3.8 8.92 8.84 8.92 c2.12 0 4.2 -0.8 5.72 -2 z M56.08 25.119999999999997 c1.24 9.4 -4.88 15.28 -12.44 15.28 c-7.96 0 -14.52 -5.88 -14.52 -14.4 s6.72 -14.4 14.52 -14.4 c3.72 0 7 1.2 9.4 3.32 l-3.52 3.96 c-1.48 -1.04 -3.48 -1.8 -5.52 -1.8 c-5.08 0 -8.8 3.72 -8.8 8.92 s3.6 8.92 8.44 8.92 c3.68 0 6.24 -1.32 7.04 -4.84 l-6.6 0 l0 -4.96 l12 0 z"></path></g></svg>
             </a>
         </div>        
-        <div id="navigation">
-            <h3> <a id="projects-nav" href="#codepen-section">Projects</a></h3>
-            <h3> <a id="contact-nav" href="contact.html">Let's chat</a></h3>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="nav-links">
+            <h3> <a class="link" id="projects-nav" href="#codepen-section">Projects</a></h3>
+            <h3> <a class="link" id="contact-nav" href="contact.html">Let's chat</a></h3>
         </div>
     </nav>    
-
-    <header class="welcome-section">
-        <h1>Front-End Developer, UI/UX Designer</h1>
-        <h2>I design and build user interfaces, welcome!</h2>
-        <img src="res/avatar.png" alt="pfp">
-    </header>
-
-    <div class="digital-art">
-        <img src="res/webdev-art.png" alt="webdev-art">
+    <div class="whitespace"></div>
+    <div class="welcome-section">
+        <h1 class="landing-title">Frontend Developer, UI/UX Designer</h1>
+        <h2 class="landing-subtitle">I design and build websites and user interfaces, welcome.</h2>
+        <img class="avatar" src="res/avatar.png" alt="avatar">
     </div>
-    <!-- HOME SECTION CLOSE -->
+    <div class="digital-art-container">
+        <img class="digital-art" src="res/webdev-art.png" alt="webdev-art">
+    </div>
 
-    <!-- ABOUT ME SECTION -->
+
     <section class="description-skills-section">
         <div class="personal-description">
-            <h2>Hi. I'm Christian.</h2>
-            <p>Throughout my journey as a software developer, I've developed a deep passion 
-                for web development. I consider myself a hybrid professional, merging my skills 
-                as a UI/UX designer and software developer with a keen interest in front-end 
-                design. I strive to build impactful products and applications that feature sleek, 
-                intuitive user interfaces. Beyond the world of technology, I maintain a strong 
-                passion for health and wellness. This interest drives my motivation to create 
-                products that make a tangible difference in people's lives.</p>
-                <hr> <!-- horizontal line -->
-        </div>
-
-        <div class="skills-container">
-            <div class="frontend-box">
-                <div class="icon-container" id="frontend-icon">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
-                </div>
-                <h3 id="frontend-title">Frontend Dev.</h3>
-                <p>I enjoy translating my creative concepts into tactile, interactive experiences 
-                    that strike a balance between elegance, simplicity, and responsiveness. All of 
-                    this, with a sprinkle of creativity that makes each project unique.</p>
-                <hr>
-                <h4>Development Tools:</h4>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Git</li>
-                    <li>Bootstrap</li>
-                    <li>Node.js</li>
-                    <li>Sass</li>
-                    <li>Visual Studio Code</li>
-                    <li>Netlify</li>
-                </ul>
-            </div>
-    
-            <div class="uiux-box">
-                <div class="icon-container" id="uiux-icon">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z"/></svg>
-                </div>
-                <h3 id="uiux-title">UI/UX Design</h3>
-                <p>In my design process, I merge aesthetic sensibility with a deep focus on the user's journey. By intertwining creativity with functionality, each project I work on becomes a unique blend of form and usability. My goal is to amplify the user experience through design that speaks for itself.</p>
-                <hr>
-                <h4>Design Tools:</h4>
-                <ul>
-                    <li>Figma</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Pen and Paper</li>
-                    <li>Font Awesome</li>
-                    <li>Looka</li>
-                    <li>Lightroom</li>
-                    <li>Photoshop</li>
-                    <li>Blender</li>
-                    <li>Unity</li>
-                    <li>TouchDesigner</li>
-                </ul>
+            <div class="personal-description-container">
+                <h2 class="pd-title" >Hi, I'm Christian. Pleased to meet you.</h2>
+                <p class="pd-text">Throughout my journey as a software developer, I've developed a deep passion 
+                    for web development. I consider myself a hybrid professional, merging my skills 
+                    as a UI/UX designer and software developer with a keen interest in front-end 
+                    design. I strive to build impactful products and applications that feature sleek, 
+                    intuitive user interfaces.</p>
             </div>
         </div>
     </section>
+
+    <div class="skills-container">
+        <div class="frontend-box">
+            <div class="icon-container" id="frontend-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="skill-icon" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#2e2e2e}</style><path d="M381.5 4l-4.7 15.3-144 464L228 498.5l30.6 9.5 4.7-15.3 144-464L412 13.5 381.5 4zM160.7 105.4l-11.7 11L13 244.4 .7 256 13 267.7l136 128 11.7 11 21.9-23.3-11.7-11L47.3 256 171 139.6l11.7-11-21.9-23.3zm296.7 23.9l12 10.6c27.8 24.7 47.5 44 67.4 63.5l0 0c16.8 16.4 33.7 32.9 55.5 52.8L469 372.3l-11.7 11 21.9 23.3 11.7-11 136-128 12.7-12L626.6 244c-27.8-24.7-47.5-44-67.4-63.5l0 0C539.2 161 519 141.3 490.6 116l-12-10.6-21.3 23.9z"/></svg>
+            </div>
+            <h3 id="frontend-title">Frontend Developer</h3>
+            <p>I enjoy translating my creative concepts into tactile, interactive experiences 
+                that strike a balance between elegance, simplicity, and responsiveness. All of 
+                this, with a sprinkle of creativity that makes each project unique.</p>
+            <hr>
+            <h4>Development Tools:</h4>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Git</li>
+                <li>Bootstrap</li>
+                <li>Node.js</li>
+                <li>Sass</li>
+                <li>Visual Studio Code</li>
+                <li>Netlify</li>
+            </ul>
+        </div>
+        <div class="uiux-box">
+            <div class="icon-container" id="uiux-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="skill-icon" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#2e2e2e}</style><path d="M480 24V64h40 16V96H520 480v40 16H448V136 96H408 392V64h16 40V24 8h32V24zM78.8 256L288 349l209.2-93L288 163 78.8 256zM288 128L536.6 238.5 576 256l-39.4 17.5L288 384 39.4 273.5 0 256l39.4-17.5L288 128zM104.6 337.5L144 355 78.8 384 288 477l209.2-93L432 355l39.4-17.5 65.2 29L576 384l-39.4 17.5L288 512 39.4 401.5 0 384l39.4-17.5 65.2-29z"/></svg>
+            </div>
+            <h3 id="uiux-title">Designer</h3>
+            <p>In my design process, I merge aesthetic sensibility with a deep focus on the user's journey. By intertwining creativity with functionality, each project I work on becomes a unique blend of form and usability. My goal is to amplify the user experience through design that speaks for itself.</p>
+            <hr>
+            <h4>Design Tools:</h4>
+            <ul>
+                <li>Figma</li>
+                <li>Adobe Illustrator</li>
+                <li>Pen and Paper</li>
+                <li>Font Awesome</li>
+                <li>Looka</li>
+                <li>Lightroom</li>
+                <li>Photoshop</li>
+                <li>Blender</li>
+                <li>Unity</li>
+                <li>TouchDesigner</li>
+            </ul>
+        </div>
+    </div>
     <!-- ABOUT ME SECTION CLOSE -->
 
     <!-- PROJECTS SECTION -->
@@ -149,6 +155,8 @@
     </div>
     <!-- PROJECTS SECTION CLOSE -->
 
+    <hr class="projects-cards-divider">
+
     <!-- EDUCATION SECTION -->
     <section class="education-section">
         <div class="card-container">
@@ -161,6 +169,7 @@
                 <div class="card-back">
                     <!-- Back content here -->
                     <h3>B.A in Computer Science</h3>
+                    <hr>
                     <p>George Washington University</p>
                     <p>Washington, DC</p>
                     <p>May 2023</p>
@@ -174,6 +183,7 @@
                 </div>
                 <div class="card-back">
                     <h3>B.F.A in Interaction Design</h3>
+                    <hr>
                     <p>George Washington University</p>
                     <p>Washington, DC</p>
                     <p>May 2023</p>
@@ -187,6 +197,7 @@
                 </div>
                 <div class="card-back">
                     <h3>The Web Developer Bootcamp 2023</h3>
+                    <hr>
                     <p>Udemy</p>
                     <p>Remote</p>
                     <p>January 2023</p>
@@ -200,6 +211,7 @@
                 </div>
                 <div class="card-back">
                     <h3>Meta Front-End Developer Professional Certificate</h3>
+                    <hr>
                     <p>Coursera</p>
                     <p>Remote</p>
                     <p>Ongoing</p>
@@ -233,30 +245,32 @@
         </div>      
     
         <footer>
-            <a id="footer-logo" href="#">
-                <div id="logo2-wrapper">
-                    <img id="logo2" src="res/logo-white-background.png" alt="logo" style="width: 90px"; height="auto">
+            <div class="footer-content">
+                <a id="footer-logo" href="#">
+                    <div id="logo2-wrapper">
+                        <img id="logo2" src="res/logo-white-background.png" alt="logo" style="width: 90px"; height="auto">
+                    </div>
+                </a>
+                <h4>Living and fulfilling the Kaizen philosophy.</h4>
+                <div  class="social-links-container">
+                    <a class="social-links" href="https://www.instagram.com/christiangarcia.d" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    </a>
+                    <a class="social-links" href="https://dribbble.com/yourusername" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z"/></svg>
+                    </a>
+                    <a class="social-links" href="https://www.linkedin.com/in/christian-garcia-diaz-5712b8241" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                    </a>
+                    <a class="social-links" href="https://github.com/christiangarcia-dev" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                    </a>
+                    <a class="social-links" href="mailto:2001christiangarcia@gmail.com" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+                    </a>
                 </div>
-            </a>
-            <h4>Living and fulfilling the Kaizen philosophy.</h4>
-            <div  class="social-links-container">
-                <a class="social-links" href="https://www.instagram.com/christiangarcia.d" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                </a>
-                <a class="social-links" href="https://dribbble.com/yourusername" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z"/></svg>
-                </a>
-                <a class="social-links" href="https://www.linkedin.com/in/christian-garcia-diaz-5712b8241" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
-                </a>
-                <a class="social-links" href="https://github.com/christiangarcia-dev" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                </a>
-                <a class="social-links" href="mailto:2001christiangarcia@gmail.com" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
-                </a>
+                <h4>Built by me &copy; 2023 Christian Garcia  | christiangarcia.info</h4>
             </div>
-            <h4>Built by me &copy; 2023 Christian Garcia  | christiangarcia.info</h4>
         </footer>
     </div>
     <!-- BOTTOM SECTION CLOSE -->
@@ -284,6 +298,12 @@
         }
         });
     });
+    </script>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', () => {
+        document.querySelector('.nav-links').style.display = 
+            document.querySelector('.nav-links').style.display === 'none' ? 'flex' : 'none';
+        });
     </script>
 </body>
 </html> 
