@@ -3,50 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16 (1)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon_package_v0.16 (2)/favicon.ico" sizes="16x16">
     <link rel="stylesheet" type="text/css" href="styles-form.css">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Contact Form</title>
 </head>
 <body>
   <nav class="contact-form-navbar">
     <div class="nav-content">
-      <div>
+      <div class="logo-wrapper">
         <a class="home-button" href="index.html">
-          <img src="res/logo-blue-background.png" alt="logo">
+          <svg width="1829" height="2074" viewBox="0 0 156.25 177.16206752227635" class="logo-svg"><defs id="SvgjsDefs1011"></defs><g id="SvgjsG1012" featurekey="rootContainer" transform="matrix(3.1502007406971018,0,0,3.1502007406971018,0.000023179328736052197,0.013147506542870495)" fill="#00a0c3"><path xmlns="http://www.w3.org/2000/svg" d="M23.11 55.78L1.69 43.41A3.39 3.39 0 0 1 0 40.48V15.75a3.39 3.39 0 0 1 1.69-2.94L23.11.45a3.39 3.39 0 0 1 3.39 0l21.41 12.37a3.39 3.39 0 0 1 1.69 2.94v24.72a3.39 3.39 0 0 1-1.69 2.94L26.5 55.78a3.39 3.39 0 0 1-3.39 0z"></path></g><g id="SvgjsG1013" featurekey="nameFeature-0" transform="matrix(1.8368705316129397,0,0,1.8368705316129397,24.693634444517706,40.6922976290269)" fill="#f5f5f5"><path d="M25.92 37 c-2.48 2.24 -5.8 3.4 -9.52 3.4 c-7.84 0 -14.6 -5.88 -14.6 -14.4 s6.76 -14.4 14.6 -14.4 c3.68 0 6.96 1.2 9.36 3.32 l-3.52 3.96 c-1.48 -1.04 -3.48 -1.8 -5.52 -1.8 c-5.04 0 -8.84 3.72 -8.84 8.92 s3.8 8.92 8.84 8.92 c2.12 0 4.2 -0.8 5.72 -2 z M56.08 25.119999999999997 c1.24 9.4 -4.88 15.28 -12.44 15.28 c-7.96 0 -14.52 -5.88 -14.52 -14.4 s6.72 -14.4 14.52 -14.4 c3.72 0 7 1.2 9.4 3.32 l-3.52 3.96 c-1.48 -1.04 -3.48 -1.8 -5.52 -1.8 c-5.08 0 -8.8 3.72 -8.8 8.92 s3.6 8.92 8.44 8.92 c3.68 0 6.24 -1.32 7.04 -4.84 l-6.6 0 l0 -4.96 l12 0 z"></path></g></svg>
         </a>
       </div>
       <a class="quit-button" href="index.html">
         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#00A0C3}</style><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
       </a>
     </div>
-  </nav>
-  <hr> 
+  </nav> 
   <img class="avatar" src="res/avatar.png">
-    <div class="form-container">
-      <div class="subtitle-container">
-        <h1>Thanks for taking a sec to reach out. Let's get started.</h1>
+
+  <div class="subtitle-container">
+    <h1 class="subtitle">Thank you for reaching out. How can i help you today?</h1>
+  </div>
+
+  <div class="form-container">
+    <form action="/submit_form" method="post">
+      <div class="input-container">
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
       </div>
-        <form action="/submit_form" method="post">
-          <div class="input-container">
-
-            <div class="input-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name">
-            </div>
-            
-            <div class="input-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email">
-            </div>
-
-          </div>
-          <div class="textarea-container">
-            <div class="textarea-container input-group">
-              <label for="details">Message</label>
-              <textarea id="details" name="details"></textarea>
-            </div>            
-          </div>
-          <input class="submit-button" type="submit" value="Submit">
-        </form>
-    </div>      
+      <div class="textarea-container">
+        <div class="input-group">
+          <label for="details">Message</label>
+          <textarea id="details" name="details" required></textarea>
+        </div>            
+      </div>
+      <input class="submit-button" type="submit" value="Submit">
+    </form>
+  </div>      
 </body>
 </html>
