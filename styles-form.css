@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Jost', sans-serif;
 }
 
 body {
@@ -21,16 +21,26 @@ body {
     border-bottom: 1px solid rgba(134, 134, 134, 0.139);
 }
 
-.home-button img {
-    width:auto;
-    height: 3.6em;
-    padding-left: 0.3em;
+.logo-wrapper {
+    width: 5em;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.8em;
+} 
+
+.logo-svg {
+    width: 3.3rem;
+    height: auto;
+    align-self: center;
+    justify-self: center;
 }
 
 .quit-button svg {
     width: auto;
     height: 1.2em;
-    padding-right: 1.2em;
+    margin-right: 0.8em;
 }
 
 .nav-content {
@@ -42,12 +52,12 @@ body {
 
 .avatar {
     position: absolute;
-    top: calc(100px - 50px); /* navbar's height minus half of the avatar's height */
-    left: 50%; /* center it horizontally */
-    transform: translateX(-50%); /* ensures the avatar is centered by its middle, not left edge */
+    top: calc(100px - 50px);
+    left: 50%; 
+    transform: translateX(-50%); 
     height: 90px;
     width: 90px;
-    z-index: 1; /* make sure the avatar appears above the hr */
+    z-index: 1; 
 }
 
 .subtitle-container {
@@ -109,11 +119,11 @@ textarea {
 }
 
 .input-group label {
-    padding-bottom: 0.63em;  /* Adjust as needed */
+    padding-bottom: 0.63em;  
     padding-left: 0.1em;
     color: rgb(134, 134, 134);
     font-size: 1rem;
-    font-weight: lighter;
+    font-weight: 200;
     width: 100%;
 }
 
@@ -159,18 +169,8 @@ textarea {
 /* Responsive design */
 @media screen and (min-width: 769px) {
 
-    .home-button img {
-        height: 5em;
-        padding-left: 0;
-    }
-
-    .quit-button svg {
-        height: 1.5em;
-        padding-right: 1.5em;
-    }
-
     .avatar {
-        top: calc(100px - 62px); /* navbar's height minus half of the avatar's height */
+        top: calc(100px - 62px); 
         height: 110px;
         width: 110px;
     }
@@ -210,9 +210,17 @@ textarea {
     }
 
     .avatar {
-        top: calc(100px - 68px); /* navbar's height minus half of the avatar's height */
+        top: calc(100px - 68px);
         height: 120px;
         width: 120px;
+    }
+
+    .logo-wrapper {
+        margin-left: 6em;
+    } 
+
+    .quit-button {
+        margin-right: 6em;
     }
 }
 

@@ -17,8 +17,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%; 
-    /* justify-content: space-between;
-    align-items: center;  */
+    justify-content: space-between;
+    align-items: center; 
     padding: 1.7em 0; 
 }
 
@@ -27,6 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: fit-content;
 }
 
 .logo-wrapper {
@@ -41,10 +42,14 @@ body {
 .logo-svg {
     width: 3.3rem;
     height: auto;
+    align-self: center;
+    justify-self: center;
 }
 
 .menu-container {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .hamburger {
@@ -55,6 +60,7 @@ body {
     cursor: pointer;
     background-color: #FFF;
     margin-right: 0.8em;
+    z-index: 2;
 }
 
 .hamburger:hover div{
@@ -68,15 +74,19 @@ body {
     margin: 5px 0;
 }
 
-.nav-links {
+.nav-links-active {
     display: none;
-    /* max-height: 0; */
+}
+
+.nav-links {
+    display: none; 
+    max-height: 0; 
     overflow: hidden;
     transition: max-height 0.3s ease-out;
     flex-direction: column; 
     align-items: center;
-    width: 100%; /* set to 100% to occupy full navbar width */
-    justify-content: center; /* center items horizontally */
+    width: 100%; 
+    justify-content: center; 
 }
 
 .nav-links:active {
@@ -128,13 +138,14 @@ body {
 .whitespace {
     padding: 1.4em;
 }
+
 /* INITIAL AREA */ 
 .welcome-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%; /* check if this line is necessary */ 
+    width: 90%; 
     padding: 1em;
     margin: 0 auto;
 }
@@ -208,7 +219,7 @@ body {
 }
 
 .skills-container {
-    position: relative; /* was relative */ 
+    position: relative; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -481,7 +492,6 @@ body {
     text-decoration: none;
     font-size: 0.7rem;
     font-style: bold;
-    /* letter-spacing: 1.5px; */
     color: rgba(103, 102, 102, 0.456);
     display: flex; 
     align-items: center; 
@@ -953,28 +963,62 @@ footer h4 {
         width: 3.6rem;
     }
 
+    .navbar-top {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menu-container {
+        display: none;
+    }
+    
     .hamburger {
         display: none;
     }
 
-    .nav-links {
+    .nav-links-active {
+        display: contents;
+        position: static;
         display: flex;
-        max-height: none;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        gap: 0.2em; 
+        margin-right: 3em;
     }
 
-    #projects-nav {
-        display: contents; 
+    #projects-nav-active {
         font-size: 1.1rem;
         font-weight: 200;
         align-self: center;
+        color: #000; 
+        margin: 0;
     }
 
-    #contact-nav {
+    #contact-nav-active:hover, 
+    #contact-nav-active:focus,
+    #contact-nav-active:active {
+        background-color: #00A0C3;
+        color: #FFF;
+        border-color: #00A0C3;
+    }
+
+    #contact-nav-active {
         font-size: 1.1rem;
         font-weight: 200;
-        margin-right: 3em;
-        padding: 0.3em 1.6em;
+        padding: 0.4em 1em;
+        color: #00A0C3;
+        border: solid #00A0C3 1px;
+        border-radius: 1.87em;
+        transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;   
     }
+
+    #projects-nav-active:hover,
+    #projects-nav-active:focus,
+    #projects-nav-active:active {
+        color: #00A0C3;
+    }   
 
     .link {
         margin: 0;
@@ -1024,6 +1068,10 @@ footer h4 {
     
     .logo-wrapper {
         margin-left: 6rem;
+    }
+
+    .nav-links-active {
+        margin-right: 6em;
     }
 
     #contact-nav {
