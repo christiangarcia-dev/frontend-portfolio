@@ -120,7 +120,7 @@ textarea {
 
 .input-group label {
     padding-bottom: 0.63em;  
-    padding-left: 0.1em;
+    padding-left: 0.3em;
     color: rgb(134, 134, 134);
     font-size: 1rem;
     font-weight: 300;
@@ -147,15 +147,15 @@ textarea {
 }
 
 .submit-button {
-    border: 2px solid #00A0C3; 
+    border: 1.5px solid #00A0C3; 
     background-color: #fff;
     border-radius: 30px;
     margin: 1.5em auto 7em auto;
     color: #00A0C3;
-    padding: 0.6em 3.5em;
+    padding: 8px 45px;
     text-align: center;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 400;
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
