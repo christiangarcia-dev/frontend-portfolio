@@ -71,7 +71,7 @@ body {
     width: 1rem;
     height: 0.07rem;
     background: #000;
-    margin: 5px 0;
+    margin: 6.2px 0;
 }
 
 .nav-links-active {
@@ -107,8 +107,9 @@ body {
     margin: 0;
     padding: 0.4em 1em;
     font-size: 1.2rem;
+    font-weight: 200;
     color: #00A0C3;
-    border: solid #00A0C3 1px;
+    border: solid #00A0C3 1.5px;
     border-radius: 1.87em;
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
@@ -125,6 +126,7 @@ body {
     margin: 0;
     margin-bottom: 0.5em;
     font-size: 1.2rem;
+    font-weight: 200;
     color: #000; 
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
@@ -328,11 +330,11 @@ body {
 
 #codepen-section .item-desc h3 {
     font-weight: 400 !important;
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
 }
 
 #codepen-section .item-desc p {
-    font-size: 0.75rem !important;
+    font-size: 1rem !important;
     line-height: 1.3em !important;
     padding-bottom: 0.5em !important;
 }
@@ -479,7 +481,7 @@ body {
 .resume-button {
     margin-top: 3.9em;
     margin-bottom: 8em;
-    border: 1px solid rgba(103, 102, 102, 0.456);
+    border: 1.5px solid rgba(103, 102, 102, 0.456);
     border-radius: 38px;
     background-color: #FFF;
     display: inline-flex; 
@@ -594,7 +596,7 @@ body {
 }
 
 .cta-box button  {
-    border: 1px solid #16ecc5; 
+    border: 1.5px solid #16ecc5; 
     border-radius: 30px;
     background-color: #002C35;
     grid-column: unset; 
@@ -757,7 +759,7 @@ footer h4 {
 
     .card .card-icon {
         top: 9%;  
-        left: 6%;   
+        left: 4.5%;   
         height: 1.1rem;   
         width: 1.1rem;    
     }
